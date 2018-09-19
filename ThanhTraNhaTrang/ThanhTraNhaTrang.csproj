@@ -1103,7 +1103,6 @@
     <Content Include="Views\KeHoachTrung\Index.cshtml" />
     <Content Include="Views\KeHoachTrung\_AddEditPartial.cshtml" />
     <Content Include="Views\SystemConfig\_AddEditPartial.cshtml" />
-    <Content Include="Views\Account\_ProfilePartial.cshtml" />
     <Content Include="Views\Account\Profiles.cshtml" />
   </ItemGroup>
   <ItemGroup>
