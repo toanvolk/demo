@@ -1,0 +1,481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBContextModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Dm_BoPhan">
+    <Key>
+      <PropertyRef Name="MaBoPhan" />
+    </Key>
+    <Property Name="MaBoPhan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenBoPhan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_CapNganhNghe">
+    <Key>
+      <PropertyRef Name="MaCap" />
+    </Key>
+    <Property Name="MaCap" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="TenCap" Type="nvarchar" MaxLength="250" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_ChucVu">
+    <Key>
+      <PropertyRef Name="MaChucVu" />
+    </Key>
+    <Property Name="MaChucVu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenChucVu" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TenKhac" Type="nvarchar" MaxLength="250" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_DoiTuong">
+    <Key>
+      <PropertyRef Name="MaDoiTuong" />
+    </Key>
+    <Property Name="MaDoiTuong" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenDoiTuong" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TenKhac" Type="nvarchar" MaxLength="250" />
+    <Property Name="MaLoaiHinhDN" Type="varchar" MaxLength="50" />
+    <Property Name="MaTinhThanh" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenTinhThanh" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MaQuan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenQuan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="250" />
+    <Property Name="DienThoai" Type="nvarchar" MaxLength="15" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="NgươiDaiDien" Type="nvarchar" MaxLength="150" />
+    <Property Name="ChuSohuu" Type="nvarchar" MaxLength="150" />
+    <Property Name="NgayCapGP" Type="date" Nullable="false" />
+    <Property Name="NgayDoiGP" Type="date" />
+    <Property Name="MaNganhNghe" Type="varchar" MaxLength="50" />
+    <Property Name="TenNganhNghe" Type="nvarchar" MaxLength="250" />
+    <Property Name="ViPhamNhieu" Type="bit" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_DonViThucHien">
+    <Key>
+      <PropertyRef Name="MaDonVi" />
+    </Key>
+    <Property Name="MaDonVi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenDonVi" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TenKhac" Type="nvarchar" MaxLength="250" />
+    <Property Name="MaTinhThanh" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenTinhThanh" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MaQuan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenQuan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="250" />
+    <Property Name="DienThoai" Type="nvarchar" MaxLength="15" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="NgươiDaiDien" Type="nvarchar" MaxLength="150" />
+    <Property Name="ThuTruong" Type="nvarchar" MaxLength="150" />
+    <Property Name="NgayCapGP" Type="date" Nullable="false" />
+    <Property Name="NgayDoiGP" Type="date" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_HanhViViPham">
+    <Key>
+      <PropertyRef Name="MaHanhVi" />
+    </Key>
+    <Property Name="MaHanhVi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenHanhVi" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="NoiDung" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_LoaiHinhDoanhNghiep">
+    <Key>
+      <PropertyRef Name="MaLoaiHinhDN" />
+    </Key>
+    <Property Name="MaLoaiHinhDN" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenLoaiHinhDN" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_LoaiThanhTra">
+    <Key>
+      <PropertyRef Name="MaKieuTT" />
+    </Key>
+    <Property Name="MaKieuTT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenKieuTT" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_NganhNghe">
+    <Key>
+      <PropertyRef Name="MaNganhNghe" />
+    </Key>
+    <Property Name="MaNganhNghe" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenNganhNghe" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Cap1" Type="varchar" MaxLength="20" />
+    <Property Name="Cap2" Type="varchar" MaxLength="20" />
+    <Property Name="Cap3" Type="varchar" MaxLength="20" />
+    <Property Name="Cap4" Type="varchar" MaxLength="20" />
+    <Property Name="Cap5" Type="varchar" MaxLength="20" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_NhanVien">
+    <Key>
+      <PropertyRef Name="MaNhanVien" />
+    </Key>
+    <Property Name="MaNhanVien" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenNhanVien" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TenKhac" Type="nvarchar" MaxLength="250" />
+    <Property Name="MaNhom" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenNhom" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MaChucVu" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenChucVu" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MaBoPhan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenBoPhan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MaPhongBan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenPhongBan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="GioiTinh" Type="varchar" MaxLength="5" />
+    <Property Name="NgaySinh" Type="date" />
+    <Property Name="NgayLamViec" Type="date" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="250" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="15" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" />
+    <Property Name="CMND" Type="nvarchar" MaxLength="50" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_NhomNhanVen">
+    <Key>
+      <PropertyRef Name="MaNhom" />
+    </Key>
+    <Property Name="MaNhom" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenNhom" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_PhamViThanhTra">
+    <Key>
+      <PropertyRef Name="MaPV" />
+    </Key>
+    <Property Name="MaPV" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenPV" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="NoiDung" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_PhongBan">
+    <Key>
+      <PropertyRef Name="MaPhongBan" />
+    </Key>
+    <Property Name="MaPhongBan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenPhongBan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TenKhac" Type="nvarchar" MaxLength="250" />
+    <Property Name="MaBoPhan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenBoPhan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Dm_QuanHuyen">
+    <Key>
+      <PropertyRef Name="MaQuan" />
+    </Key>
+    <Property Name="MaQuan" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenQuan" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TenKhac" Type="nvarchar" MaxLength="250" />
+    <Property Name="MaTinhThanh" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenTinhThanh" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TTNhaTrang.dbo.Dm_ThoiGianTienHanh' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Dm_ThoiGianTienHanh">
+          <Property Name="MaThoiGian" Type="varchar" MaxLength="50" />
+          <Property Name="TenThoiGian" Type="nvarchar" MaxLength="250" />
+          <Property Name="TheoQuy" Type="bit" />
+          <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+          <Property Name="IsActivate" Type="bit" />
+          <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+          <Property Name="DateCreate" Type="datetime" />
+          <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+          <Property Name="DateUpdate" Type="datetime" />
+        </EntityType>-->
+  <EntityType Name="Dm_TinhThanh">
+    <Key>
+      <PropertyRef Name="MaTinhThanh" />
+    </Key>
+    <Property Name="MaTinhThanh" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenTinhThanh" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="TenKhac" Type="nvarchar" MaxLength="250" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="NV_KeHoachThanhTra">
+    <Key>
+      <PropertyRef Name="MaKeHoach" />
+    </Key>
+    <Property Name="MaKeHoach" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenKeHoach" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="NamKeHoach" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaDonVi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenDonVi" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="MaKieuTT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenKieuTT" Type="nvarchar" MaxLength="250" />
+    <Property Name="MaLoaiTT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenLoaiTT" Type="nvarchar" MaxLength="250" />
+    <Property Name="NoiDung" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="PhamViTT" Type="nvarchar" MaxLength="500" />
+    <Property Name="ThoiHanTT" Type="int" />
+    <Property Name="ThơiGianTH" Type="varchar" MaxLength="50" />
+    <Property Name="DonViPhoiHop" Type="nvarchar" MaxLength="250" />
+    <Property Name="GhiChu" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="NV_KeHoachThanhTra_CT">
+    <Key>
+      <PropertyRef Name="KeHoach_CT" />
+    </Key>
+    <Property Name="KeHoach_CT" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MaKeHoach" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MaDoiTuong" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenDoiTuong" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="350" />
+    <Property Name="KiemTra" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="NV_KetQuaThanhTra">
+    <Key>
+      <PropertyRef Name="KeHoach_CT" />
+    </Key>
+    <Property Name="KeHoach_CT" Type="int" Nullable="false" />
+    <Property Name="NoiDung" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="TuNgay" Type="date" Nullable="false" />
+    <Property Name="DenNgay" Type="date" Nullable="false" />
+    <Property Name="ThuHoiTien" Type="money" />
+    <Property Name="ThuHoiDat" Type="money" />
+    <Property Name="PhatTien" Type="money" />
+    <Property Name="TichThuTien" Type="money" />
+    <Property Name="GhiChuTTT" Type="nvarchar" MaxLength="300" />
+    <Property Name="TieuHuyTien" Type="money" />
+    <Property Name="GhiChuTieuHuy" Type="nvarchar" MaxLength="300" />
+    <Property Name="SuLyKhac" Type="money" />
+    <Property Name="GhiChuSuLy" Type="nvarchar" MaxLength="300" />
+    <Property Name="DinhChi" Type="bit" />
+    <Property Name="TuocQuyen" Type="bit" />
+    <Property Name="GhiChuTuocQuyen" Type="nvarchar" MaxLength="300" />
+    <Property Name="TomTatSaiPham" Type="nvarchar(max)" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Sys_Channge_PassWord">
+    <Key>
+      <PropertyRef Name="PassID" />
+    </Key>
+    <Property Name="PassID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="250" />
+    <Property Name="PassWordOld" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="PassWordNew" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Sys_Function_permission">
+    <Key>
+      <PropertyRef Name="KeyMenuID" />
+    </Key>
+    <Property Name="KeyMenuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="IsViews" Type="bit" />
+    <Property Name="IsAdd" Type="bit" />
+    <Property Name="IsEdit" Type="bit" />
+    <Property Name="IsDelete" Type="bit" />
+    <Property Name="IsCopy" Type="bit" />
+    <Property Name="IsPrint" Type="bit" />
+    <Property Name="IsExport" Type="bit" />
+    <Property Name="IsImport" Type="bit" />
+  </EntityType>
+  <EntityType Name="Sys_LogDetail">
+    <Key>
+      <PropertyRef Name="LogDetailID" />
+    </Key>
+    <Property Name="LogDetailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LogMasterID" Type="int" Nullable="false" />
+    <Property Name="TableName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ObjectEdit" Type="nvarchar" MaxLength="250" />
+    <Property Name="Descriptions" Type="nvarchar" MaxLength="350" />
+    <Property Name="DateEdit" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TTNhaTrang.dbo.Sys_LogMaster' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Sys_LogMaster">
+    <Key>
+      <PropertyRef Name="LogMasterID" />
+    </Key>
+    <Property Name="LogMasterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserID" Type="varchar" MaxLength="50" />
+    <Property Name="UserGroupID" Type="varchar" MaxLength="50" />
+    <Property Name="StartDateLog" Type="datetime" />
+    <Property Name="EndDateLog" Type="datetime" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TTNhaTrang.dbo.Sys_MenuList' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Sys_MenuList">
+          <Property Name="KeyMenuID" Type="varchar" MaxLength="20" />
+          <Property Name="PageKey" Type="nvarchar" MaxLength="150" />
+          <Property Name="Alignment" Type="varchar" MaxLength="2" />
+          <Property Name="MenuType" Type="int" />
+          <Property Name="IsGroup" Type="int" />
+          <Property Name="Module" Type="varchar" MaxLength="10" />
+          <Property Name="PathIcon" Type="nvarchar" MaxLength="150" />
+          <Property Name="IsVisible" Type="bit" />
+          <Property Name="IsBold" Type="bit" />
+          <Property Name="KeyWork" Type="nvarchar" MaxLength="50" />
+          <Property Name="SorOrder" Type="int" />
+        </EntityType>-->
+  <EntityType Name="Sys_Permission">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserGroupID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KeyMenuID" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="PermisName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Permis_Type" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TTNhaTrang.dbo.Sys_Systen_confuguration' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Sys_Systen_confuguration">
+          <Property Name="KeyID" Type="varchar" MaxLength="50" />
+          <Property Name="Values" Type="nvarchar" MaxLength="150" />
+        </EntityType>-->
+  <EntityType Name="Sys_UserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupID" />
+    </Key>
+    <Property Name="UserGroupID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserGroupName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Note" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Sys_UserList">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Dirthday" Type="date" />
+    <Property Name="Sex" Type="varchar" MaxLength="2" />
+    <Property Name="UserGroupID" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="UserGroupName" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="PassWord" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IsAdmin" Type="bit" />
+    <Property Name="Note" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsActivate" Type="bit" />
+    <Property Name="UserCreate" Type="varchar" MaxLength="50" />
+    <Property Name="DateCreate" Type="datetime" />
+    <Property Name="UserUpdate" Type="varchar" MaxLength="50" />
+    <Property Name="DateUpdate" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="DBContextModelStoreContainer">
+    <EntitySet Name="Dm_BoPhan" EntityType="Self.Dm_BoPhan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_CapNganhNghe" EntityType="Self.Dm_CapNganhNghe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_ChucVu" EntityType="Self.Dm_ChucVu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_DoiTuong" EntityType="Self.Dm_DoiTuong" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_DonViThucHien" EntityType="Self.Dm_DonViThucHien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_HanhViViPham" EntityType="Self.Dm_HanhViViPham" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_LoaiHinhDoanhNghiep" EntityType="Self.Dm_LoaiHinhDoanhNghiep" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_LoaiThanhTra" EntityType="Self.Dm_LoaiThanhTra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_NganhNghe" EntityType="Self.Dm_NganhNghe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_NhanVien" EntityType="Self.Dm_NhanVien" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_NhomNhanVen" EntityType="Self.Dm_NhomNhanVen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_PhamViThanhTra" EntityType="Self.Dm_PhamViThanhTra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_PhongBan" EntityType="Self.Dm_PhongBan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_QuanHuyen" EntityType="Self.Dm_QuanHuyen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Dm_TinhThanh" EntityType="Self.Dm_TinhThanh" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NV_KeHoachThanhTra" EntityType="Self.NV_KeHoachThanhTra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NV_KeHoachThanhTra_CT" EntityType="Self.NV_KeHoachThanhTra_CT" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NV_KetQuaThanhTra" EntityType="Self.NV_KetQuaThanhTra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Channge_PassWord" EntityType="Self.Sys_Channge_PassWord" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Function_permission" EntityType="Self.Sys_Function_permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_LogDetail" EntityType="Self.Sys_LogDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Permission" EntityType="Self.Sys_Permission" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_UserGroup" EntityType="Self.Sys_UserGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_UserList" EntityType="Self.Sys_UserList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_LogMaster" EntityType="Self.Sys_LogMaster" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Sys_LogMaster].[LogMasterID] AS [LogMasterID], 
+    [Sys_LogMaster].[UserID] AS [UserID], 
+    [Sys_LogMaster].[UserGroupID] AS [UserGroupID], 
+    [Sys_LogMaster].[StartDateLog] AS [StartDateLog], 
+    [Sys_LogMaster].[EndDateLog] AS [EndDateLog]
+    FROM [dbo].[Sys_LogMaster] AS [Sys_LogMaster]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

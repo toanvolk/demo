@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBContextModelStoreContainer" CdmEntityContainer="mConnectstring">
+    <EntitySetMapping Name="Dm_BoPhan">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_BoPhan">
+        <MappingFragment StoreEntitySet="Dm_BoPhan">
+          <ScalarProperty Name="MaBoPhan" ColumnName="MaBoPhan" />
+          <ScalarProperty Name="TenBoPhan" ColumnName="TenBoPhan" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_CapNganhNghe">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_CapNganhNghe">
+        <MappingFragment StoreEntitySet="Dm_CapNganhNghe">
+          <ScalarProperty Name="MaCap" ColumnName="MaCap" />
+          <ScalarProperty Name="TenCap" ColumnName="TenCap" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_ChucVu">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_ChucVu">
+        <MappingFragment StoreEntitySet="Dm_ChucVu">
+          <ScalarProperty Name="MaChucVu" ColumnName="MaChucVu" />
+          <ScalarProperty Name="TenChucVu" ColumnName="TenChucVu" />
+          <ScalarProperty Name="TenKhac" ColumnName="TenKhac" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_DoiTuong">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_DoiTuong">
+        <MappingFragment StoreEntitySet="Dm_DoiTuong">
+          <ScalarProperty Name="MaDoiTuong" ColumnName="MaDoiTuong" />
+          <ScalarProperty Name="TenDoiTuong" ColumnName="TenDoiTuong" />
+          <ScalarProperty Name="TenKhac" ColumnName="TenKhac" />
+          <ScalarProperty Name="MaLoaiHinhDN" ColumnName="MaLoaiHinhDN" />
+          <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+          <ScalarProperty Name="TenTinhThanh" ColumnName="TenTinhThanh" />
+          <ScalarProperty Name="MaQuan" ColumnName="MaQuan" />
+          <ScalarProperty Name="TenQuan" ColumnName="TenQuan" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="NgươiDaiDien" ColumnName="NgươiDaiDien" />
+          <ScalarProperty Name="ChuSohuu" ColumnName="ChuSohuu" />
+          <ScalarProperty Name="NgayCapGP" ColumnName="NgayCapGP" />
+          <ScalarProperty Name="NgayDoiGP" ColumnName="NgayDoiGP" />
+          <ScalarProperty Name="MaNganhNghe" ColumnName="MaNganhNghe" />
+          <ScalarProperty Name="TenNganhNghe" ColumnName="TenNganhNghe" />
+          <ScalarProperty Name="ViPhamNhieu" ColumnName="ViPhamNhieu" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_DonViThucHien">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_DonViThucHien">
+        <MappingFragment StoreEntitySet="Dm_DonViThucHien">
+          <ScalarProperty Name="MaDonVi" ColumnName="MaDonVi" />
+          <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+          <ScalarProperty Name="TenKhac" ColumnName="TenKhac" />
+          <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+          <ScalarProperty Name="TenTinhThanh" ColumnName="TenTinhThanh" />
+          <ScalarProperty Name="MaQuan" ColumnName="MaQuan" />
+          <ScalarProperty Name="TenQuan" ColumnName="TenQuan" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="DienThoai" ColumnName="DienThoai" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="NgươiDaiDien" ColumnName="NgươiDaiDien" />
+          <ScalarProperty Name="ThuTruong" ColumnName="ThuTruong" />
+          <ScalarProperty Name="NgayCapGP" ColumnName="NgayCapGP" />
+          <ScalarProperty Name="NgayDoiGP" ColumnName="NgayDoiGP" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_HanhViViPham">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_HanhViViPham">
+        <MappingFragment StoreEntitySet="Dm_HanhViViPham">
+          <ScalarProperty Name="MaHanhVi" ColumnName="MaHanhVi" />
+          <ScalarProperty Name="TenHanhVi" ColumnName="TenHanhVi" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_LoaiHinhDoanhNghiep">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_LoaiHinhDoanhNghiep">
+        <MappingFragment StoreEntitySet="Dm_LoaiHinhDoanhNghiep">
+          <ScalarProperty Name="MaLoaiHinhDN" ColumnName="MaLoaiHinhDN" />
+          <ScalarProperty Name="TenLoaiHinhDN" ColumnName="TenLoaiHinhDN" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_LoaiThanhTra">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_LoaiThanhTra">
+        <MappingFragment StoreEntitySet="Dm_LoaiThanhTra">
+          <ScalarProperty Name="MaKieuTT" ColumnName="MaKieuTT" />
+          <ScalarProperty Name="TenKieuTT" ColumnName="TenKieuTT" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_NganhNghe">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_NganhNghe">
+        <MappingFragment StoreEntitySet="Dm_NganhNghe">
+          <ScalarProperty Name="MaNganhNghe" ColumnName="MaNganhNghe" />
+          <ScalarProperty Name="TenNganhNghe" ColumnName="TenNganhNghe" />
+          <ScalarProperty Name="Cap1" ColumnName="Cap1" />
+          <ScalarProperty Name="Cap2" ColumnName="Cap2" />
+          <ScalarProperty Name="Cap3" ColumnName="Cap3" />
+          <ScalarProperty Name="Cap4" ColumnName="Cap4" />
+          <ScalarProperty Name="Cap5" ColumnName="Cap5" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_NhanVien">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_NhanVien">
+        <MappingFragment StoreEntitySet="Dm_NhanVien">
+          <ScalarProperty Name="MaNhanVien" ColumnName="MaNhanVien" />
+          <ScalarProperty Name="TenNhanVien" ColumnName="TenNhanVien" />
+          <ScalarProperty Name="TenKhac" ColumnName="TenKhac" />
+          <ScalarProperty Name="MaNhom" ColumnName="MaNhom" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="MaChucVu" ColumnName="MaChucVu" />
+          <ScalarProperty Name="TenChucVu" ColumnName="TenChucVu" />
+          <ScalarProperty Name="MaBoPhan" ColumnName="MaBoPhan" />
+          <ScalarProperty Name="TenBoPhan" ColumnName="TenBoPhan" />
+          <ScalarProperty Name="MaPhongBan" ColumnName="MaPhongBan" />
+          <ScalarProperty Name="TenPhongBan" ColumnName="TenPhongBan" />
+          <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="NgayLamViec" ColumnName="NgayLamViec" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CMND" ColumnName="CMND" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_NhomNhanVen">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_NhomNhanVen">
+        <MappingFragment StoreEntitySet="Dm_NhomNhanVen">
+          <ScalarProperty Name="MaNhom" ColumnName="MaNhom" />
+          <ScalarProperty Name="TenNhom" ColumnName="TenNhom" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_PhamViThanhTra">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_PhamViThanhTra">
+        <MappingFragment StoreEntitySet="Dm_PhamViThanhTra">
+          <ScalarProperty Name="MaPV" ColumnName="MaPV" />
+          <ScalarProperty Name="TenPV" ColumnName="TenPV" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_PhongBan">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_PhongBan">
+        <MappingFragment StoreEntitySet="Dm_PhongBan">
+          <ScalarProperty Name="MaPhongBan" ColumnName="MaPhongBan" />
+          <ScalarProperty Name="TenPhongBan" ColumnName="TenPhongBan" />
+          <ScalarProperty Name="TenKhac" ColumnName="TenKhac" />
+          <ScalarProperty Name="MaBoPhan" ColumnName="MaBoPhan" />
+          <ScalarProperty Name="TenBoPhan" ColumnName="TenBoPhan" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_QuanHuyen">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_QuanHuyen">
+        <MappingFragment StoreEntitySet="Dm_QuanHuyen">
+          <ScalarProperty Name="MaQuan" ColumnName="MaQuan" />
+          <ScalarProperty Name="TenQuan" ColumnName="TenQuan" />
+          <ScalarProperty Name="TenKhac" ColumnName="TenKhac" />
+          <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+          <ScalarProperty Name="TenTinhThanh" ColumnName="TenTinhThanh" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dm_TinhThanh">
+      <EntityTypeMapping TypeName="DBContextModel.Dm_TinhThanh">
+        <MappingFragment StoreEntitySet="Dm_TinhThanh">
+          <ScalarProperty Name="MaTinhThanh" ColumnName="MaTinhThanh" />
+          <ScalarProperty Name="TenTinhThanh" ColumnName="TenTinhThanh" />
+          <ScalarProperty Name="TenKhac" ColumnName="TenKhac" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NV_KeHoachThanhTra">
+      <EntityTypeMapping TypeName="DBContextModel.NV_KeHoachThanhTra">
+        <MappingFragment StoreEntitySet="NV_KeHoachThanhTra">
+          <ScalarProperty Name="MaKeHoach" ColumnName="MaKeHoach" />
+          <ScalarProperty Name="TenKeHoach" ColumnName="TenKeHoach" />
+          <ScalarProperty Name="NamKeHoach" ColumnName="NamKeHoach" />
+          <ScalarProperty Name="MaDonVi" ColumnName="MaDonVi" />
+          <ScalarProperty Name="TenDonVi" ColumnName="TenDonVi" />
+          <ScalarProperty Name="MaKieuTT" ColumnName="MaKieuTT" />
+          <ScalarProperty Name="TenKieuTT" ColumnName="TenKieuTT" />
+          <ScalarProperty Name="MaLoaiTT" ColumnName="MaLoaiTT" />
+          <ScalarProperty Name="TenLoaiTT" ColumnName="TenLoaiTT" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="PhamViTT" ColumnName="PhamViTT" />
+          <ScalarProperty Name="ThoiHanTT" ColumnName="ThoiHanTT" />
+          <ScalarProperty Name="ThơiGianTH" ColumnName="ThơiGianTH" />
+          <ScalarProperty Name="DonViPhoiHop" ColumnName="DonViPhoiHop" />
+          <ScalarProperty Name="GhiChu" ColumnName="GhiChu" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NV_KeHoachThanhTra_CT">
+      <EntityTypeMapping TypeName="DBContextModel.NV_KeHoachThanhTra_CT">
+        <MappingFragment StoreEntitySet="NV_KeHoachThanhTra_CT">
+          <ScalarProperty Name="KeHoach_CT" ColumnName="KeHoach_CT" />
+          <ScalarProperty Name="MaKeHoach" ColumnName="MaKeHoach" />
+          <ScalarProperty Name="MaDoiTuong" ColumnName="MaDoiTuong" />
+          <ScalarProperty Name="TenDoiTuong" ColumnName="TenDoiTuong" />
+          <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+          <ScalarProperty Name="KiemTra" ColumnName="KiemTra" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NV_KetQuaThanhTra">
+      <EntityTypeMapping TypeName="DBContextModel.NV_KetQuaThanhTra">
+        <MappingFragment StoreEntitySet="NV_KetQuaThanhTra">
+          <ScalarProperty Name="KeHoach_CT" ColumnName="KeHoach_CT" />
+          <ScalarProperty Name="NoiDung" ColumnName="NoiDung" />
+          <ScalarProperty Name="TuNgay" ColumnName="TuNgay" />
+          <ScalarProperty Name="DenNgay" ColumnName="DenNgay" />
+          <ScalarProperty Name="ThuHoiTien" ColumnName="ThuHoiTien" />
+          <ScalarProperty Name="ThuHoiDat" ColumnName="ThuHoiDat" />
+          <ScalarProperty Name="PhatTien" ColumnName="PhatTien" />
+          <ScalarProperty Name="TichThuTien" ColumnName="TichThuTien" />
+          <ScalarProperty Name="GhiChuTTT" ColumnName="GhiChuTTT" />
+          <ScalarProperty Name="TieuHuyTien" ColumnName="TieuHuyTien" />
+          <ScalarProperty Name="GhiChuTieuHuy" ColumnName="GhiChuTieuHuy" />
+          <ScalarProperty Name="SuLyKhac" ColumnName="SuLyKhac" />
+          <ScalarProperty Name="GhiChuSuLy" ColumnName="GhiChuSuLy" />
+          <ScalarProperty Name="DinhChi" ColumnName="DinhChi" />
+          <ScalarProperty Name="TuocQuyen" ColumnName="TuocQuyen" />
+          <ScalarProperty Name="GhiChuTuocQuyen" ColumnName="GhiChuTuocQuyen" />
+          <ScalarProperty Name="TomTatSaiPham" ColumnName="TomTatSaiPham" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Channge_PassWord">
+      <EntityTypeMapping TypeName="DBContextModel.Sys_Channge_PassWord">
+        <MappingFragment StoreEntitySet="Sys_Channge_PassWord">
+          <ScalarProperty Name="PassID" ColumnName="PassID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="PassWordOld" ColumnName="PassWordOld" />
+          <ScalarProperty Name="PassWordNew" ColumnName="PassWordNew" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Function_permission">
+      <EntityTypeMapping TypeName="DBContextModel.Sys_Function_permission">
+        <MappingFragment StoreEntitySet="Sys_Function_permission">
+          <ScalarProperty Name="KeyMenuID" ColumnName="KeyMenuID" />
+          <ScalarProperty Name="IsViews" ColumnName="IsViews" />
+          <ScalarProperty Name="IsAdd" ColumnName="IsAdd" />
+          <ScalarProperty Name="IsEdit" ColumnName="IsEdit" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="IsCopy" ColumnName="IsCopy" />
+          <ScalarProperty Name="IsPrint" ColumnName="IsPrint" />
+          <ScalarProperty Name="IsExport" ColumnName="IsExport" />
+          <ScalarProperty Name="IsImport" ColumnName="IsImport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_LogDetail">
+      <EntityTypeMapping TypeName="DBContextModel.Sys_LogDetail">
+        <MappingFragment StoreEntitySet="Sys_LogDetail">
+          <ScalarProperty Name="LogDetailID" ColumnName="LogDetailID" />
+          <ScalarProperty Name="LogMasterID" ColumnName="LogMasterID" />
+          <ScalarProperty Name="TableName" ColumnName="TableName" />
+          <ScalarProperty Name="ObjectEdit" ColumnName="ObjectEdit" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="DateEdit" ColumnName="DateEdit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Permission">
+      <EntityTypeMapping TypeName="DBContextModel.Sys_Permission">
+        <MappingFragment StoreEntitySet="Sys_Permission">
+          <ScalarProperty Name="PermissionID" ColumnName="PermissionID" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="KeyMenuID" ColumnName="KeyMenuID" />
+          <ScalarProperty Name="PermisName" ColumnName="PermisName" />
+          <ScalarProperty Name="Permis_Type" ColumnName="Permis_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_UserGroup">
+      <EntityTypeMapping TypeName="DBContextModel.Sys_UserGroup">
+        <MappingFragment StoreEntitySet="Sys_UserGroup">
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="UserGroupName" ColumnName="UserGroupName" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_UserList">
+      <EntityTypeMapping TypeName="DBContextModel.Sys_UserList">
+        <MappingFragment StoreEntitySet="Sys_UserList">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FullName" ColumnName="FullName" />
+          <ScalarProperty Name="Dirthday" ColumnName="Dirthday" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="UserGroupName" ColumnName="UserGroupName" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="IsActivate" ColumnName="IsActivate" />
+          <ScalarProperty Name="UserCreate" ColumnName="UserCreate" />
+          <ScalarProperty Name="DateCreate" ColumnName="DateCreate" />
+          <ScalarProperty Name="UserUpdate" ColumnName="UserUpdate" />
+          <ScalarProperty Name="DateUpdate" ColumnName="DateUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_LogMaster">
+      <EntityTypeMapping TypeName="DBContextModel.Sys_LogMaster">
+        <MappingFragment StoreEntitySet="Sys_LogMaster">
+          <ScalarProperty Name="LogMasterID" ColumnName="LogMasterID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="UserGroupID" ColumnName="UserGroupID" />
+          <ScalarProperty Name="StartDateLog" ColumnName="StartDateLog" />
+          <ScalarProperty Name="EndDateLog" ColumnName="EndDateLog" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

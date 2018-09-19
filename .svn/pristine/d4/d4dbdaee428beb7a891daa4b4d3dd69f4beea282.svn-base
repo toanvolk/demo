@@ -1,0 +1,9 @@
+.edit_new_cus a{
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    vertical-align: inherit;
+    color: #f49f0b;
+}

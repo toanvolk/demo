@@ -1,0 +1,338 @@
+h1{
+    font-size: 24px
+}
+body{
+    background: #ffffff
+}
+#page-wrapper{
+    background: #eef5f9
+}
+.navbar-default{
+    background: #1e88e5
+}
+.navbar-brand{
+    padding: 5px
+}
+.menu_center_top{
+    float: left;
+}
+.menu_center_top ul{
+    width: 100%;
+    padding: 15px 0 0 100px;
+    text-align: center
+}
+.menu_center_top ul li{
+    display: inline;
+    padding: 0 20px;
+}
+.menu_center_top ul li a{
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none
+}
+.bg_left_menu{
+    background: #ffffff;
+    
+}
+.sidebar ul li a.active {
+    background-color: #26c6da;
+    color: #ffffff
+}
+.navbar-top-links a{
+    color: #ffffff
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #26c6da;
+    color: #ffffff
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #26c6da;
+    border-color: #337ab7;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    background: #26c6da;
+    border-color: #ffffff
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+.panel-heading h3.panel-title{
+    text-align: center;
+    width: 100%;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: inherit;
+    text-align: center;
+}
+.btn-success {
+    color: #fff;
+    background-color: #1e88e5;
+    border-color: #0873d1;
+}
+.btn-success.active, .btn-success.focus, .btn-success:active, .btn-success:focus, .btn-success:hover, .open>.dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #2795f5;
+    border-color: #0f80e2;
+}
+.button_add_new{
+    float: right;
+}
+.search_button_add_new{
+    padding: 10px;
+    width: 100%;
+    float: left;
+}
+.search_add_new{
+    width: 50%;
+    float: left;
+}
+.search_add_new input{
+    height: 35px;
+    width: 50%;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    text-indent: 10px
+}
+.center_new{
+    text-align: center
+}
+.edit_new_cus button{
+    background: none;
+    border: none
+}
+.show_sle{
+    width: 30%;
+    float: left;
+}
+.show_sle label{
+    float: left;
+    line-height: 28px;
+    font-weight: normal
+}
+.show_sle select{
+    float: left;
+    width: 60px;
+    margin: 0 0 0 10px;
+}
+.show_sle_newyear{
+    width: 70%;
+    float: left;
+}
+.show_sle_newyear select:nth-child(1){
+    float: left;
+    width: 80px;
+    margin: 0 0 0 5px;
+    height: 32px
+}
+
+.show_sle_newyear select:nth-child(2){
+    float: left;
+    width: 180px;
+    margin: 0 0 0 10px;
+    height: 32px
+}
+
+.show_sle_newyear select:nth-child(3){
+    float: left;
+    width: 180px;
+    margin: 0 0 0 10px;
+    height: 32px
+}
+.cap_1_new{
+    font-weight: bold
+}
+.cap_2_new{
+    text-indent: 20px;
+    font-weight: bold
+}
+.cap_3_new{
+    text-indent: 40px
+}
+.bg_cap1_bg_cap2{
+    background: #e8f3f9 !important
+}
+.bg_cap2{
+    background: #fcfcfc !important
+}
+.page_nub{
+    text-align: center
+}
+.footer{
+    width: 100%;
+    float: left;
+    padding: 15px;
+}
+.footer h3{
+    font-size: 14px;
+    padding: 0;
+    margin: 0
+}
+.footer p{
+    font-size: 12px;
+    padding: 0;
+    margin: 0
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 10px 0px;
+    border-bottom: 1px solid #eee;
+}
+table.table-bordered th:last-child, table.table-bordered td:last-child {
+    border-right-width: 0;
+    vertical-align: inherit;
+}
+.table>caption+thead>tr:first-child>td, .table>caption+thead>tr:first-child>th, .table>colgroup+thead>tr:first-child>td, .table>colgroup+thead>tr:first-child>th, .table>thead:first-child>tr:first-child>td, .table>thead:first-child>tr:first-child>th {
+    border-top: 0;
+    vertical-align: inherit;
+}
+.show_sle_newyear input{
+    height: 30px;
+    margin: 0 0 0 10px;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    text-indent: 10px
+}
+table.table-bordered tbody th, table.table-bordered tbody td {
+    border-left-width: 0;
+    border-bottom-width: 0;
+    vertical-align: inherit;
+}
+.edit_new_cus button  {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    vertical-align: inherit;
+    color: #f49f0b;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 5px;
+}
+.center{
+    text-align: center
+}
+.class_new_add_align table>tbody>tr>td{
+    vertical-align: inherit
+}
+.button_add_new button a{
+    color: #fff;
+    text-decoration: none
+}
+.creat_new_form_ke_hoach{
+    float: left;
+    width: 100%;
+}
+.nam_new_year{
+    width: 30%;
+    float: left;
+    padding: 0 0 0 1%;
+}
+.nam_new_year label{
+    width: 100%;
+}
+.nam_new_year input{
+    width: 100%;;
+    text-indent: 10px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+.nam_new_year_right {
+    width: 68%;
+    margin: 0 1% 2% 1%;
+    padding: 0;
+    float: left;
+}
+.nam_new_year_right label{
+    width: 100%;
+}
+.nam_new_year_right input{
+    width: 100%;;
+    text-indent: 10px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+.nam_new_year_main_50{
+    width: 48%;
+    margin: 0 1% 1% 1%;
+    padding: 0;
+    float: left;
+}
+.nam_new_year_main_50 label{
+    width: 100%;
+}
+.nam_new_year_main_50 input{
+    width: 100%;;
+    text-indent: 10px;
+    height: 32px;
+    border: 1px solid #ccc;
+    border-radius: 2px
+}
+.icon_clickmenu{
+    float: left;
+    padding: 10px 0 0 10px;
+
+}
+.icon_clickmenu button{
+    border-radius: 2px;
+    background: none;
+    border: 1px solid #a9d7ff;
+    color: #fff
+}
+.icon_clickmenu button span{
+    font-size: 21px;
+    padding: 3px;
+}
+.editor_textera {
+    width: 98.2%;
+    float: left;
+    margin: 0 0.9%;
+}
+.icon_style_new span{
+    display: inline;
+    padding: 0 5px 0 0;
+    color: #b1b1b1
+}
+.icon_style_new input{
+    width: 95%;
+display: inline;
+}
+.icon_style_new .checkbox{
+    width: 100%;
+    text-align: left
+}
+.icon_style_new .checkbox label {
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+.icon_style_new .checkbox input {
+    float: left;
+    position: relative;
+    width: 17px;
+}
+.table_mobile{
+    display: none
+}
+.sub_detail_mobile{
+    display: none
+}
+.detail_col_show td{
+    width: 100%;
+}
+span.view_icon_border{
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    border-radius: 3px;
+    color: #1e88e5
+}
+span.view_icon_border:hover{
+    background:#337ab7;
+    color: #fff
+}

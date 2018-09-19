@@ -1,0 +1,195 @@
+@media only screen and (max-width: 850px){
+    .search_add_new label{
+        width: 100%
+    }
+    .show_sle_newyear select:nth-child(1) {
+        float: left;
+        width: 48%;
+        margin: 0 0 0 5px;
+        height: 32px;
+    }
+    .show_sle_newyear {
+        width: 100%;
+        float: left;
+    }
+    .show_sle_newyear select:nth-child(2) {
+        float: left;
+        width: 48%;
+        margin: 0 0 10px 10px;
+        height: 32px;
+    }
+    .show_sle_newyear select:nth-child(3) {
+        float: left;
+        width: 48%;
+        margin: 0 0 10px 5px;
+        height: 32px;
+    }
+    .button_add_new {
+        float: right;
+        width: 100%;
+        padding: 0 0 0 5px;
+    }
+    .button_add_new button{
+        width: 49%;
+
+    }
+    .menu_center_top ul li {
+        display: inline;
+        padding: 0 10px;
+    }
+    .menu_center_top ul {
+        width: 100%;
+        padding:0;
+        text-align: center;
+    }
+    .menu_center_top {
+        float: left;
+        width: 68%;
+        padding: 15px 0 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .icon_clickmenu{
+        display: none
+    }
+    .menu_center_top ul {
+        padding: 0
+    }
+    .menu_center_top {
+        float: left;
+        padding: 20px 0 0;
+        width: 100%
+    }
+    .menu_center_top ul li {
+        display: inline;
+        padding: 0 6px;
+        text-align: left;
+        float: left;
+    }
+    .menu_center_top ul li a {
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 11px;
+    }
+    .table_mobile {
+        display: block;
+        /* position: relative; */
+        float: left;
+    }
+    .table_desktop{
+        display: none
+    }
+    .detail_col_show ul{
+        margin: 0;
+        padding: 5px;
+    }
+    .detail_col_show ul li{
+        width: 100%;
+        text-decoration: none;
+        border-bottom: 1px solid #efefef;
+        padding: 10px 0;
+        list-style: none;
+        float: left;
+    }
+    .detail_col_show ul li b{
+        width: 100%;
+        float: left;
+    }
+    .detail_col_show ul li span{
+        width: 100%;
+        float: left;
+    }
+    .show_sle {
+        display: none
+    }
+    .search_add_new {
+        width: 100%;
+        float: left;
+    }
+    .search_add_new input {
+        height: 35px;
+        width: 100%;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        text-indent: 10px;
+        margin: 0 0 10px 0;
+    }
+    .search_add_new label{
+        width: 100%;
+        float: left;
+    }
+    .search_add_new button{
+        width: 100%
+    }
+    .button_add_new button:nth-child(3){
+        display: none
+    }
+    .button_add_new{
+        width: 100%
+    }
+    .button_add_new button{
+        width: 48%;
+        float: left;
+        margin: 0 1%;
+    }
+    .table_mobile .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+        padding: 5px;
+        width: 100%
+    }
+    .show_sle_newyear{
+        width: 100%
+    }
+    .show_sle_newyear select:nth-child(3) {
+        float: left;
+        width: 172px;
+        margin: 0 0 10px 10px;
+        height: 32px;
+    }
+    .show_sle_newyear input {
+        height: 34px;
+        margin: 0 0 10px 5px;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        text-indent: 10px;
+        width: 86%;
+    }
+    
+
+}
+@media only screen and (max-width: 568px){
+    .show_sle_newyear select:nth-child(2){
+        width: 100%;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    .show_sle_newyear select:nth-child(1){
+        width: 100%;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    .show_sle_newyear select:nth-child(3){
+        width: 100%;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    .show_sle_newyear input {
+        width: 100%;
+        margin: 0 0 10px 0;
+        padding: 0
+    }
+    .show_sle_newyear button{
+        width: 100%;
+        margin: 0 0 10px 0
+    }
+    .menu_center_top ul {
+        width: 100%;
+        padding: 15px 0 0 0;
+        text-align: center;
+    }
+    .creat_new_form_ke_hoach, .nam_new_year, .nam_new_year_right, .nam_new_year_main_50{
+        width: 100%;
+        margin: 0 0 1% 0
+    }
+
+}

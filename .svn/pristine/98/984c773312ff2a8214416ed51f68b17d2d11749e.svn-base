@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBContextModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Dm_BoPhan">
+    <Key>
+      <PropertyRef Name="MaBoPhan" />
+    </Key>
+    <Property Name="MaBoPhan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenBoPhan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_CapNganhNghe">
+    <Key>
+      <PropertyRef Name="MaCap" />
+    </Key>
+    <Property Name="MaCap" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="TenCap" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_ChucVu">
+    <Key>
+      <PropertyRef Name="MaChucVu" />
+    </Key>
+    <Property Name="MaChucVu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenChucVu" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenKhac" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_DoiTuong">
+    <Key>
+      <PropertyRef Name="MaDoiTuong" />
+    </Key>
+    <Property Name="MaDoiTuong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenDoiTuong" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenKhac" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MaLoaiHinhDN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MaTinhThanh" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenTinhThanh" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaQuan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenQuan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DienThoai" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="NgươiDaiDien" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ChuSohuu" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="NgayCapGP" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NgayDoiGP" Type="DateTime" Precision="0" />
+    <Property Name="MaNganhNghe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TenNganhNghe" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="ViPhamNhieu" Type="Boolean" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_DonViThucHien">
+    <Key>
+      <PropertyRef Name="MaDonVi" />
+    </Key>
+    <Property Name="MaDonVi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenDonVi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenKhac" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MaTinhThanh" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenTinhThanh" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaQuan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenQuan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="DienThoai" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Fax" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="NgươiDaiDien" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ThuTruong" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="NgayCapGP" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NgayDoiGP" Type="DateTime" Precision="0" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_HanhViViPham">
+    <Key>
+      <PropertyRef Name="MaHanhVi" />
+    </Key>
+    <Property Name="MaHanhVi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenHanhVi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_LoaiHinhDoanhNghiep">
+    <Key>
+      <PropertyRef Name="MaLoaiHinhDN" />
+    </Key>
+    <Property Name="MaLoaiHinhDN" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenLoaiHinhDN" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_LoaiThanhTra">
+    <Key>
+      <PropertyRef Name="MaKieuTT" />
+    </Key>
+    <Property Name="MaKieuTT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenKieuTT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_NganhNghe">
+    <Key>
+      <PropertyRef Name="MaNganhNghe" />
+    </Key>
+    <Property Name="MaNganhNghe" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenNganhNghe" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Cap1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Cap2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Cap3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Cap4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Cap5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_NhanVien">
+    <Key>
+      <PropertyRef Name="MaNhanVien" />
+    </Key>
+    <Property Name="MaNhanVien" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenNhanVien" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenKhac" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MaNhom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenNhom" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaChucVu" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenChucVu" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaBoPhan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenBoPhan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaPhongBan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenPhongBan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GioiTinh" Type="String" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+    <Property Name="NgayLamViec" Type="DateTime" Precision="0" />
+    <Property Name="DiaChi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CMND" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_NhomNhanVen">
+    <Key>
+      <PropertyRef Name="MaNhom" />
+    </Key>
+    <Property Name="MaNhom" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenNhom" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_PhamViThanhTra">
+    <Key>
+      <PropertyRef Name="MaPV" />
+    </Key>
+    <Property Name="MaPV" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenPV" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_PhongBan">
+    <Key>
+      <PropertyRef Name="MaPhongBan" />
+    </Key>
+    <Property Name="MaPhongBan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenPhongBan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenKhac" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MaBoPhan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenBoPhan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_QuanHuyen">
+    <Key>
+      <PropertyRef Name="MaQuan" />
+    </Key>
+    <Property Name="MaQuan" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenQuan" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenKhac" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MaTinhThanh" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenTinhThanh" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Dm_TinhThanh">
+    <Key>
+      <PropertyRef Name="MaTinhThanh" />
+    </Key>
+    <Property Name="MaTinhThanh" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenTinhThanh" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenKhac" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="NV_KeHoachThanhTra">
+    <Key>
+      <PropertyRef Name="MaKeHoach" />
+    </Key>
+    <Property Name="MaKeHoach" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenKeHoach" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NamKeHoach" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaDonVi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenDonVi" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MaKieuTT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenKieuTT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="MaLoaiTT" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenLoaiTT" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhamViTT" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ThoiHanTT" Type="Int32" />
+    <Property Name="ThơiGianTH" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DonViPhoiHop" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="GhiChu" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="NV_KeHoachThanhTra_CT">
+    <Key>
+      <PropertyRef Name="KeHoach_CT" />
+    </Key>
+    <Property Name="KeHoach_CT" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaKeHoach" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MaDoiTuong" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TenDoiTuong" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="KiemTra" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="NV_KetQuaThanhTra">
+    <Key>
+      <PropertyRef Name="KeHoach_CT" />
+    </Key>
+    <Property Name="KeHoach_CT" Type="Int32" Nullable="false" />
+    <Property Name="NoiDung" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TuNgay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="DenNgay" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ThuHoiTien" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="ThuHoiDat" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="PhatTien" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TichThuTien" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="GhiChuTTT" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TieuHuyTien" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="GhiChuTieuHuy" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="SuLyKhac" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="GhiChuSuLy" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="DinhChi" Type="Boolean" />
+    <Property Name="TuocQuyen" Type="Boolean" />
+    <Property Name="GhiChuTuocQuyen" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="TomTatSaiPham" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Sys_Channge_PassWord">
+    <Key>
+      <PropertyRef Name="PassID" />
+    </Key>
+    <Property Name="PassID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="PassWordOld" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PassWordNew" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Sys_Function_permission">
+    <Key>
+      <PropertyRef Name="KeyMenuID" />
+    </Key>
+    <Property Name="KeyMenuID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsViews" Type="Boolean" />
+    <Property Name="IsAdd" Type="Boolean" />
+    <Property Name="IsEdit" Type="Boolean" />
+    <Property Name="IsDelete" Type="Boolean" />
+    <Property Name="IsCopy" Type="Boolean" />
+    <Property Name="IsPrint" Type="Boolean" />
+    <Property Name="IsExport" Type="Boolean" />
+    <Property Name="IsImport" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Sys_LogDetail">
+    <Key>
+      <PropertyRef Name="LogDetailID" />
+    </Key>
+    <Property Name="LogDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="LogMasterID" Type="Int32" Nullable="false" />
+    <Property Name="TableName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ObjectEdit" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Descriptions" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+    <Property Name="DateEdit" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Sys_Permission">
+    <Key>
+      <PropertyRef Name="PermissionID" />
+    </Key>
+    <Property Name="PermissionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserGroupID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="KeyMenuID" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PermisName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Permis_Type" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sys_UserGroup">
+    <Key>
+      <PropertyRef Name="UserGroupID" />
+    </Key>
+    <Property Name="UserGroupID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserGroupName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Note" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Sys_UserList">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="FullName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Dirthday" Type="DateTime" Precision="0" />
+    <Property Name="Sex" Type="String" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Name="UserGroupID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserGroupName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PassWord" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="Note" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="IsActivate" Type="Boolean" />
+    <Property Name="UserCreate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreate" Type="DateTime" Precision="3" />
+    <Property Name="UserUpdate" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="DateUpdate" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Sys_LogMaster">
+    <Key>
+      <PropertyRef Name="LogMasterID" />
+    </Key>
+    <Property Name="LogMasterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UserGroupID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="StartDateLog" Type="DateTime" Precision="3" />
+    <Property Name="EndDateLog" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityContainer Name="mConnectstring" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Dm_BoPhan" EntityType="Self.Dm_BoPhan" />
+    <EntitySet Name="Dm_CapNganhNghe" EntityType="Self.Dm_CapNganhNghe" />
+    <EntitySet Name="Dm_ChucVu" EntityType="Self.Dm_ChucVu" />
+    <EntitySet Name="Dm_DoiTuong" EntityType="Self.Dm_DoiTuong" />
+    <EntitySet Name="Dm_DonViThucHien" EntityType="Self.Dm_DonViThucHien" />
+    <EntitySet Name="Dm_HanhViViPham" EntityType="Self.Dm_HanhViViPham" />
+    <EntitySet Name="Dm_LoaiHinhDoanhNghiep" EntityType="Self.Dm_LoaiHinhDoanhNghiep" />
+    <EntitySet Name="Dm_LoaiThanhTra" EntityType="Self.Dm_LoaiThanhTra" />
+    <EntitySet Name="Dm_NganhNghe" EntityType="Self.Dm_NganhNghe" />
+    <EntitySet Name="Dm_NhanVien" EntityType="Self.Dm_NhanVien" />
+    <EntitySet Name="Dm_NhomNhanVen" EntityType="Self.Dm_NhomNhanVen" />
+    <EntitySet Name="Dm_PhamViThanhTra" EntityType="Self.Dm_PhamViThanhTra" />
+    <EntitySet Name="Dm_PhongBan" EntityType="Self.Dm_PhongBan" />
+    <EntitySet Name="Dm_QuanHuyen" EntityType="Self.Dm_QuanHuyen" />
+    <EntitySet Name="Dm_TinhThanh" EntityType="Self.Dm_TinhThanh" />
+    <EntitySet Name="NV_KeHoachThanhTra" EntityType="Self.NV_KeHoachThanhTra" />
+    <EntitySet Name="NV_KeHoachThanhTra_CT" EntityType="Self.NV_KeHoachThanhTra_CT" />
+    <EntitySet Name="NV_KetQuaThanhTra" EntityType="Self.NV_KetQuaThanhTra" />
+    <EntitySet Name="Sys_Channge_PassWord" EntityType="Self.Sys_Channge_PassWord" />
+    <EntitySet Name="Sys_Function_permission" EntityType="Self.Sys_Function_permission" />
+    <EntitySet Name="Sys_LogDetail" EntityType="Self.Sys_LogDetail" />
+    <EntitySet Name="Sys_Permission" EntityType="Self.Sys_Permission" />
+    <EntitySet Name="Sys_UserGroup" EntityType="Self.Sys_UserGroup" />
+    <EntitySet Name="Sys_UserList" EntityType="Self.Sys_UserList" />
+    <EntitySet Name="Sys_LogMaster" EntityType="Self.Sys_LogMaster" />
+  </EntityContainer>
+</Schema>

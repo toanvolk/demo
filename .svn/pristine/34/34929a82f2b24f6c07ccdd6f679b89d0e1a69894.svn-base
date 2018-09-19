@@ -1,0 +1,36 @@
+﻿var ShareConfig = {
+
+}
+
+var ShareMain = {
+    init: function () {
+        $(document).ready(function () {
+            ShareMain.registerEventOnLoaded();
+        });
+    },
+    registerEventOnLoaded: function () {
+        //Business
+        $("#btnKeHoachThanhTra").off('click').on('click', function () {
+            window.location.replace("/KeHoachThanhTra/Index");
+        });
+        
+        //System 
+        $("#btnSystemConfig").off('click').on('click', function () {
+            window.location.replace("/SystemConfig/Index");
+        });
+        $("#btnAutoBackupData").off('click').on('click', function () {
+            window.location.replace("/AutoBackupData/Index");
+        });
+        $("#btnLogOut").off('click').on('click', function () {
+            window.location.replace("/Account/Login");
+        });
+        $("#btnUser").off('click').on('click', function () {
+            window.location.replace("/User/Index");
+        });
+        //Catalog
+        $("#btnNganhNgheKinhDoanh").off('click').on('click', function () {
+            window.location.replace("/NganhNghe/Index");
+        });
+    },
+}
+ShareMain.init();

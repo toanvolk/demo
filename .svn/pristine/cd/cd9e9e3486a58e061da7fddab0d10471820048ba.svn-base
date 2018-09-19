@@ -1,0 +1,200 @@
+﻿<div id="modalAddEdit" class="modal fade width_popup_nv_tt" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content option-display-control">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thêm mới</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="col-sx-12 col-sm-12 col-md-6 margin_left_right_new_col margin_top_form_new">
+
+                    <div class="col-sx-12 col-sm-12 col-md-6">
+                        <label>Mã Kế hoạch <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Mã Kế hoạch">
+                    </div>
+                    <div class="col-sx-12 col-sm-12 col-md-6">
+                        <label>Năm Kế hoạch <span>*</span></label>
+                        <select class="form-control input-sm selec_dbdn">
+                            <option value="10">2010</option>
+                            <option value="25">2012</option>
+                            <option value="50">2016</option>
+                            <option value="100">2018</option>
+                        </select>
+                    </div>
+                    <div class="col-sx-12 col-sm-12 col-md-12">
+                        <label>Tên Kế hoạch <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Mã Kế hoạch">
+                    </div>
+                    <div class="col-sx-8 col-sm-6 col-md-11 fix-padding-right">
+                        <label>Chọn kiểu kiểm tra <span>*</span></label>
+                        <select class="form-control">
+                            <option>Chọn kiểu</option>
+                            <option>Kiểu A</option>
+                            <option>Kiểu B</option>
+                            <option>Kiểu C</option>
+                            <option>Kiểu D</option>
+                        </select>
+
+                    </div>
+                    <div class="col-sx-1 col-sm-1 col-md-1">
+                        @Html.Partial("/Views/Shared/_RefreshAndAddNewPartial.cshtml", new ThanhTraNhaTrang.Models.Shared.IdActionModels() {
+                       IdRefresh = "btnRefreshKieuTT",
+                       IdAdd = "btnAddKieuTT"
+                   })
+                    </div>
+
+                    <div class="col-sx-12 col-sm-12 col-md-11 fix-padding-right">
+                        <label>Chọn loại kiểm tra <span>*</span></label>
+                        <select class="form-control selec_dbdn">
+                            <option value="10">Loại 1</option>
+                            <option value="25">Loại 2</option>
+                            <option value="50">Loại 3</option>
+                            <option value="100">Loại 4</option>
+                        </select>
+                    </div>
+                    <div class="col-sx-1 col-sm-1 col-md-1">
+                        @Html.Partial("/Views/Shared/_RefreshAndAddNewPartial.cshtml", new ThanhTraNhaTrang.Models.Shared.IdActionModels()
+                   {
+                       IdRefresh = "btnRefreshLoaiTT",
+                       IdAdd = "btnAddLoaiTT"
+                   })
+                    </div>
+                    <div class="col-sx-12 col-sm-12 col-md-12 ">
+                        <label>Nội dung kiểm tra</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-sx-12 col-sm-12 col-md-5 fix-padding-right">
+                        <label>Chọn phạm vi kiểm tra <span>*</span></label>
+                        <select class="form-control selec_dbdn">
+                            <option value="10">Phạm vi A1</option>
+                            <option value="25">Phạm vi B2</option>
+                            <option value="50">Phạm vi C3</option>
+                            <option value="100">Phạm vi D4</option>
+                        </select>
+                    </div>
+                    <div class="col-sx-1 col-sm-1 col-md-1">
+                        @Html.Partial("/Views/Shared/_RefreshAndAddNewPartial.cshtml", new ThanhTraNhaTrang.Models.Shared.IdActionModels()
+                   {
+                       IdRefresh = "btnRefreshPhamViTT",
+                       IdAdd = "btnAddPhamViTT"
+                   })
+                    </div>
+                    <div class="col-sx-12 col-sm-12 col-md-5 fix-padding-right">
+                        <label>Thời gian tiến hành <span>*</span></label>
+                        <select class="form-control selec_dbdn">
+                            <option value="10">Thời gian 1</option>
+                            <option value="25">Thời gian 2</option>
+                            <option value="50">Thời gian 3</option>
+                            <option value="100">Thời gian 4</option>
+                        </select>
+                    </div>
+                    <div class="col-sx-1 col-sm-1 col-md-1">
+                        @Html.Partial("/Views/Shared/_RefreshAndAddNewPartial.cshtml", new ThanhTraNhaTrang.Models.Shared.IdActionModels()
+                   {
+                       IdRefresh = "btnRefreshThoiGianTT",
+                       IdAdd = "btnAddThoiGianTT"
+                   })
+                    </div>
+                    <div class="col-sx-12 col-sm-12 col-md-6">
+                        <label>Đơn vị phối hợp <span>*</span></label>
+                        <input type="text" class="form-control" placeholder="Đơn vị phối hợp">
+                    </div>
+                    <div class="col-sx-12 col-sm-12 col-md-5 fix-padding-right">
+                        <label>Cơ quan tiến hành <span>*</span></label>
+                        <select class="form-control selec_dbdn">
+                            <option value="10">Cơ quan 1</option>
+                            <option value="25">Cơ quan 2</option>
+                            <option value="50">Cơ quan 3</option>
+                            <option value="100">Cơ quan 4</option>
+                        </select>
+                    </div>
+                    <div class="col-sx-1 col-sm-1 col-md-1">
+                        @Html.Partial("/Views/Shared/_RefreshAndAddNewPartial.cshtml", new ThanhTraNhaTrang.Models.Shared.IdActionModels()
+                   {
+                       IdRefresh = "btnRefreshCoQuanTT",
+                       IdAdd = "btnAddCoQuanTT"
+                   })
+                    </div>
+                    <div class="col-sx-12 col-sm-12 col-md-12 ">
+                        <label>Ghi chú</label>
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-12 form-control_bottom"><label class="form-control_bottom margin_left_right_new_col"><input type="checkbox"> Sử dụng</label></div>
+                </div>
+                <div class="col-sx-12 col-sm-12 col-md-6 margin_top_form_new">
+                    <div class="col-sx-12 col-sm-12 col-md-12">
+
+                        <a href="#demo_popup" class="btn btn-info1 doi_tuong_tt_button_full_width" data-toggle="collapse"><span class="fa fa-sort-down"></span><label></label> Chọn đối tượng thanh tra</label></a>
+                        <div id="demo_popup" class="collapse icon_check_all_new1 demo_popup">
+                            <div class="col-sx-12 col-sm-12 col-md-11 padding_left_right_col_form_tt">
+                                <select class="form-control input-sm selec_dbdn">
+                                    <option value="10">Lọc theo địa bàn</option>
+                                    <option value="25">20</option>
+                                    <option value="50">30</option>
+                                    <option value="100">50</option>
+                                </select>
+                            </div>
+                            <div class="col-sx-12 col-sm-12 col-md-1 margin_top_button_15"><button class="btn btn-outline btn-primary" type="button"><span class="fa fa-search"></span></button></div>
+                            <div class="">
+                                <table class="table table-str;iped table-bordered table-hover table_desktop">
+                                    <thead>
+                                        <tr class="bg_title_table_new sub_nn_pre">
+                                            <th class="text-center" style="width: 50px">
+                                                Chọn
+                                            </th>
+                                            <th>Mã đối tượng</th>
+                                            <th>Tên đối tượng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="gradeA">
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>DT1</td>
+                                            <td>Đối tượng 1</td>
+                                        </tr>
+                                        <tr class="gradeX">
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>DT2</td>
+                                            <td>Đối tượng 2</td>
+                                        </tr>
+                                        <tr class="gradeA">
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>DT3</td>
+                                            <td>Đối tượng 3</td>
+                                        </tr>
+                                        <tr class="gradeX">
+                                            <td class="text-center"><input type="checkbox"></td>
+                                            <td>DT4</td>
+                                            <td>Đối tượng 4</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="exit_button_new">
+                                    <button type="button" class="btn btn-outline btn-primary"><span style="color: #ccc" class="fa fa-plus"></span> Thêm</button>
+                                    <a href="#demo_popup" class="btn btn-outline btn-danger" data-toggle="collapse"><span class="fa fa-times"></span> Đóng</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="row button_width_full">
+                    <button type="button" class="btn btn-outline btn-primary" id="btnSaveForm">Lưu</button>
+                    <button type="button" class="btn btn-outline btn-success" id="btnSaveAndNewForm">Lưu &amp; thêm mới</button>
+                    <button type="button" class="btn btn-outline btn-danger" data-dismiss="modal">Thoát</button>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

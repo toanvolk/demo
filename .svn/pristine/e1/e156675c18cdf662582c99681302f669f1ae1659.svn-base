@@ -1,0 +1,320 @@
+﻿@section script{
+
+    <script src="~/Scripts/Controller/ChucVuController.js"></script>
+}
+@{
+    ViewBag.Title = "Danh sách chức vụ";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Danh sách chức vụ</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+
+            <!-- /.panel-heading -->
+            <div class="panel-body class_new_add_align">
+                <div class="dataTable_wrapper scroll_fix_new">
+                    <div class="row custom_style_fiel_new">
+                        <div class="col-sx-12 col-sm-9 margin_left_right_new_col">
+                            @*<div class="col-xs-12 col-sm-6 col-md-3 padding_bottom_tablet">
+                                <label class="so_hang_display">Số hàng</label>
+                                <select name="dataTables-example_length" aria-controls="dataTables-example" class="form-control input-sm selec_dbdn">
+                                    <option value="10">10</option>
+                                    <option value="25">20</option>
+                                    <option value="50">30</option>
+                                    <option value="100">50</option>
+                                </select>
+                            </div>*@
+                            <div class="col-xs-12 col-sm-6 col-md-2 padding_bottom_tablet">
+                                <div class="input-group" id="adv-search">
+
+                                    <div class="input-group-btn">
+                                        <div class="btn-group" role="group">
+                                            <div class="dropdown dropdown-lg">
+                                                <div class="dropdown-menu dropdown-menu-right left_menu_pd_0" role="menu" id="search" class="collapse">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="form-group search_filter_check">
+
+                                                            <ul>
+                                                                <li>
+                                                                    <label>
+                                                                        <input data-toggle="collapse" data-target="#input_search_machucvu" type="checkbox">
+                                                                        <span> Mã chức vụ</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li id="input_search_machucvu" class="collapse">
+                                                                    <label>
+                                                                        <input type="text" placeholder="Nhập từ khóa" class="form-control search_input_text">
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <label>
+                                                                        <input data-toggle="collapse" data-target="#input_search_tenchucvu" type="checkbox">
+                                                                        <span> Tên chức vụ</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li id="input_search_tenchucvu" class="collapse">
+                                                                    <label>
+                                                                        <input type="text" placeholder="Nhập từ khóa" class="form-control search_input_text">
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <label>
+                                                                        <input data-toggle="collapse" data-target="#input_search_tenkhac" type="checkbox">
+                                                                        <span> Tên khác</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li id="input_search_tenkhac" class="collapse">
+                                                                    <label>
+                                                                        <input type="text" placeholder="Nhập từ khóa" class="form-control search_input_text">
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <label>
+                                                                        <input data-toggle="collapse" data-target="#input_search_ghichu" type="checkbox">
+                                                                        <span> Ghi chú</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li id="input_search_ghichu" class="collapse">
+                                                                    <label>
+                                                                        <input type="text" placeholder="Nhập từ khóa" class="form-control search_input_text">
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li><label><input data-toggle="collapse" data-target="#input_search_NguoiTao" type="checkbox"><span> Người tạo</span></label></li>
+                                                                <li id="input_search_NguoiTao" class="collapse"><label><input type="text" placeholder="Nhập từ khóa" class="form-control search_input_text"></label></li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li><label><input data-toggle="collapse" data-target="#input_search_NgayTao" type="checkbox"><span> Ngày tạo</span></label></li>
+                                                                <li id="input_search_NgayTao" class="collapse"><label><input type="date" placeholder="Chọn ngày" class="form-control search_input_text"></label></li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li><label><input data-toggle="collapse" data-target="#input_search_NguoiSua" type="checkbox"><span> Người tạo</span></label></li>
+                                                                <li id="input_search_NguoiSua" class="collapse"><label><input type="text" placeholder="Nhập từ khóa" class="form-control search_input_text"></label></li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li><label><input data-toggle="collapse" data-target="#input_search_NgaySua" type="checkbox"><span> Ngày sửa</span></label></li>
+                                                                <li id="input_search_NgaySua" class="collapse"><label><input type="date" placeholder="Chọn ngày" class="form-control search_input_text"></label></li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="button_search_bottom_new">
+                                                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Tìm</button>
+                                                            <button type="button" class="btn btn-outline btn-danger" data-toggle="collapse" data-target="#search">Thoát</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="search_top_icon_new"><button style="background: none; border: none; color: #ccc" data-toggle="collapse" title="Lọc dữ liệu theo điều kiện" data-target="#search" type="button" class="btn btn-primary button_search_new"><span class="fa fa-search"></span> Tìm kiếm</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sx-12 col-sm-3 margin_left_right_new_col">
+                            <div class="col-xs-12 col-sm-12 button_right_new_custom">
+                                <button type="button" class="btn btn-primary" id="btnAdd" data-toggle="tooltip" title="Thêm mới dữ liệu"><span class="fa fa-plus"></span></button>
+                                <button type="button" class="btn btn-danger" id="btnDelete" data-toggle="tooltip" title="Xóa dữ liệu được chọn"><span class="fa fa-trash-o"></span></button>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="icon_check_disable_list_check_mobile">
+                        <a href="#demo_mobile" id="#select_acitve_action" class="btn btn-info" data-toggle="collapse" title="Chọn cột hiển thị">Chọn cột hiển thị <span class="fa fa-sort-down"></span></a>
+                        <div id="demo_mobile" class="collapse icon_check_all_new">
+                            <ul>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="machucvu" checked="checked"><span>Mã chức vụ</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="tenchucvu" checked="checked"><span>Tên chức vụ</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="ten_khac" checked="checked"><span>Tên khác</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="sudung" checked="checked"><span>Sử dụng</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="ghichu" checked="checked"><span>Ghi chú</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="nguoitao" checked="checked"><span>Người tạo</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="ngaytao" checked="checked"><span>Ngày tạo</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="nguoisua" checked="checked"><span>Người sửa</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="ngaysua" checked="checked"><span>Ngày sửa</span></label></li>
+                            </ul>
+                            <div class="exit_button_new"><a href="#demo_mobile" class="btn btn-outline btn-danger" data-toggle="collapse"><span class="fa fa-times"></span> Đóng</a></div>
+                        </div>
+                    </div>
+                    <div class="scroll_custom_new">
+
+                        <table class="table table-striped table-bordered table-hover table_desktop mobile_width_fixed nganh_nghe_kd_table_new">
+
+                            <thead>
+                                <tr class="bg_title_table_new sub_nn_pre">
+                                    <th class="center icon_span_check_show text_right_nn width_stt_1">
+                                        <div class="icon_check_disable_list_check">
+                                            <a href="#demo" class="btn btn-info" data-toggle="collapse" title="Chọn cột hiển thị"><span class="fa fa-sort-down"></span></a>
+                                            <div id="demo" class="collapse icon_check_all_new">
+                                                <ul>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="machucvu" checked="checked"><span>Mã chức vụ</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="tenchucvu" checked="checked"><span>Tên chức vụ</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="ten_khac" checked="checked"><span>Tên khác</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="sudung" checked="checked"><span>Sử dụng</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="ghichu" checked="checked"><span>Ghi chú</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="nguoitao" checked="checked"><span>Người tạo</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="ngaytao" checked="checked"><span>Ngày tạo</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="nguoisua" checked="checked"><span>Người sửa</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="ngaysua" checked="checked"><span>Ngày sửa</span></label></li>
+                                                </ul>
+                                                <div class="exit_button_new"><a href="#demo" class="btn btn-outline btn-danger" data-toggle="collapse"><span class="fa fa-times"></span> Đóng</a></div>
+                                            </div>
+                                        </div>
+                                        STT
+                                    </th>
+                                    <th class="machucvu text_right_nn">Mã chức vụ</th>
+                                    <th class="tenchucvu text_right_nn">Tên chức vụ</th>
+                                    <th class="ten_khac text_right_nn">Tên khác</th>
+                                    <th class="sudung text_right_nn">Sử dụng</th>
+                                    <th class="ghichu text_right_nn">Ghi chú</th>
+                                    <th class="nguoitao text_right_nn">Người tạo</th>
+                                    <th class="ngaytao text_right_nn">Ngày tạo</th>
+                                    <th class="nguoisua text_right_nn">Người sửa</th>
+                                    <th class="ngaysua text_right_nn">Ngày sửa</th>
+                                    <th style="width: 70px"></th>
+                                    <th class="center_new edit_new_cus sub_nn_pre headcol" style="border: none">
+                                        <span class="fa fa-pencil icon_fix_right_table" style="padding: 3px 0 0;"></span>
+                                        <span class="icon_fix_right_table"><input type="checkbox" data-toggle="tooltip" title="Chọn tất cả" class="check" id="checkAll"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="gradeA">
+                                    <td class="text_right_nn width_stt_1">1</td>
+                                    <td class="machucvu text_right_nn">NV0001</td>
+                                    <td class="tenchucvu text_right_nn">Nhân viên</td>
+                                    <td class="ten_khac text_right_nn text_transfrom_table"></td>
+                                    <td class="sudung  text_right_nn" style="text-align: center">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                    <td class="ghichu  text_right_nn"></td>
+                                    <td class="nguoitao  text_right_nn">Nguyễn Văn Hoàng</td>
+                                    <td class="ngaytao  text_right_nn">22/01/2013</td>
+                                    <td class="nguoisua  text_right_nn">Trần Duy Khanh</td>
+                                    <td class="ngaysua  text_right_nn">13/04/2013</td>
+                                    <td style="width: 70px"></td>
+                                    <td style="width: 72px" class="fixed_right_icon_action headcol">
+                                        <span class="dropdown icon_fix_right_table">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <span class="fa fa-ellipsis-v"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><span class="fa fa-pencil"></span> Sửa</a></li>
+                                                <li><a href="#"><span class="fa fa-plus"></span> Thêm</a></li>
+                                                <li><a href="#"><span class="fa fa-trash-o"></span> Xóa</a></li>
+                                            </ul>
+                                        </span>
+                                        <span class="icon_fix_right_table"><input type="checkbox" class="check"></span>
+                                    </td>
+                                </tr>
+                                <tr class="gradeX">
+                                    <td class="text_right_nn width_stt_1">2</td>
+                                    <td class="machucvu text_right_nn">CV0002</td>
+                                    <td class="tenchucvu text_right_nn">Kỹ thuật</td>
+                                    <td class="ten_khac text_right_nn text_transfrom_table"></td>
+                                    <td class="sudung  text_right_nn" style="text-align: center">
+                                        <label>
+                                            <input type="checkbox" value="">
+                                        </label>
+                                    </td>
+                                    <td class="ghichu  text_right_nn"></td>
+                                    <td class="nguoitao  text_right_nn">Nguyễn Văn Hoàng</td>
+                                    <td class="ngaytao  text_right_nn">22/01/2013</td>
+                                    <td class="nguoisua  text_right_nn">Trần Duy Khanh</td>
+                                    <td class="ngaysua  text_right_nn">13/04/2013</td>
+                                    <td style="width: 70px"></td>
+                                    <td style="width: 72px" class="fixed_right_icon_action headcol">
+                                        <span class="dropdown icon_fix_right_table">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <span class="fa fa-ellipsis-v"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><span class="fa fa-pencil"></span> Sửa</a></li>
+                                                <li><a href="#"><span class="fa fa-plus"></span> Thêm</a></li>
+                                                <li><a href="#"><span class="fa fa-trash-o"></span> Xóa</a></li>
+                                            </ul>
+                                        </span>
+                                        <span class="icon_fix_right_table"><input type="checkbox" class="check"></span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="page_nub">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+
+                                <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title">Ngành nghề kinh doanh</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="content_popup_show_mobile nganh_nghe_kd_tb">
+                                        <ul>
+                                            <li class="text_transfrom_table font_style_cap_1">I. Nông Nghiệp, Lâm nghiệp và thủy sản</li>
+                                            <li class="">- Cấp 1: A<br /> - Doanh nghiệp: 125,025</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="font_style_cap_1">1. Nông nghiệp và hoạt động dịch vụ có liên quan</li>
+                                            <li class="">- Cấp 2: 01<br /> - Doanh nghiệp: 45,255</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="font_style_cap_1">2. Trồng cây hàng năm</li>
+                                            <li class="">- Cấp 2: 011<br /> - Doanh nghiệp: 15,654</li>
+                                        </ul>
+                                        <ul>
+                                            <li class="font_style_cap_1">3. Trồng cây hàng năm</li>
+                                            <li class="">- Cấp 3: 0111<br /> - Doanh nghiệp: 15,654</li>
+                                        </ul>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal"><span class="fa fa-times"></span> Đóng</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /.table-responsive -->
+
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+@Html.Partial("/Views/ChucVu/_AddEditPartial.cshtml")
+

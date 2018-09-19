@@ -1,0 +1,369 @@
+@media only screen and (max-width: 850px){
+    .search_add_new label{
+        width: 100%
+    }
+    .show_sle_newyear select:nth-child(1) {
+        float: left;
+        width: 48%;
+        margin: 0 0 0 0.5%;
+        height: 32px;
+    }
+    .show_sle_newyear {
+        width: 100%;
+        float: left;
+    }
+    .show_sle_newyear select:nth-child(2) {
+        float: left;
+        width: 49%;
+        margin: 0 0 1% 1%;
+        height: 32px;
+    }
+    .show_sle_newyear select:nth-child(3) {
+        float: left;
+        width: 49%;
+        margin: 0 0 1% 0.5%;
+        height: 32px;
+    }
+    .button_add_new {
+        width: 100%;
+        padding: 0;
+    }
+    .button_add_new button{
+        width: 49%;
+
+    }
+    .menu_center_top ul li {
+        display: inline;
+        padding: 0 10px;
+    }
+    .menu_center_top ul {
+        width: 100%;
+        padding:0;
+        text-align: center;
+    }
+    .menu_center_top {
+        float: left;
+        width: 68%;
+        padding: 15px 0 0;
+    }
+    .mobile_dis{
+        display: block
+    }
+    
+    div.blueTable {
+        width: 1200px;
+      }
+    .panel-body{
+        padding: 10px;
+    }
+    .button_add_new button:nth-child(1) {
+        width: 48%;
+        margin: 0 0 0 1%;
+    }
+    .button_add_new button:nth-child(2) {
+        width: 48%;
+        margin: 0 0 0 2%;
+    }
+    .show_sle_newyear input {
+        width: 37%;
+    }
+   
+    .row_sub_disable{
+        display: none !important
+    }
+    .padding_bottom_tablet{
+        padding-bottom: 4px;
+    }
+ 
+    .mobile_width_fixed{
+        min-width: 768px
+    }
+    .scroll_custom_new {
+        overflow-x:scroll;
+    }
+    .icon_check_disable_list_check{
+        display: none
+    }
+    .icon_check_disable_list_check_mobile{
+        display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    .icon_check_disable_list_check_mobile .btn-info {
+        color: #fff;
+        background-color: #31b0d5;
+        border-color: #269abc;
+        width: 100%;
+        border-radius: 2px
+    }
+    .icon_check_disable_list_check_mobile .icon_check_all_new{
+        width: 100%;
+        z-index: 999;
+    }
+    
+    
+}
+@media only screen and (max-width: 767px){
+    .icon_clickmenu{
+        display: none
+    }
+    .menu_center_top ul {
+        padding: 0
+    }
+    .menu_center_top {
+        float: left;
+        padding: 20px 0 0;
+        width: 100%
+    }
+    .menu_center_top ul li {
+        display: inline;
+        padding: 0 6px;
+        text-align: left;
+        float: left;
+    }
+    .menu_center_top ul li a {
+        text-transform: uppercase;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 14px;
+    }
+    .table_mobile {
+        display: block;
+        /* position: relative; */
+        float: left;
+    }
+   
+    .detail_col_show ul{
+        margin: 0;
+        padding: 5px;
+    }
+    .detail_col_show ul li{
+        width: 100%;
+        text-decoration: none;
+        border-bottom: 1px solid #efefef;
+        padding: 10px 0;
+        list-style: none;
+        float: left;
+    }
+    .detail_col_show ul li b{
+        width: 100%;
+        float: left;
+    }
+    .detail_col_show ul li span{
+        width: 100%;
+        float: left;
+    }
+    .show_sle {
+        display: none
+    }
+    .search_add_new {
+        width: 100%;
+        float: left;
+    }
+    .search_add_new input {
+        height: 35px;
+        width: 100%;
+        border-radius: 2px;
+        border: 1px solid #ccc;
+        text-indent: 10px;
+        margin: 0 0 10px 0;
+    }
+    .search_add_new label{
+        width: 100%;
+        float: left;
+    }
+    .search_add_new button{
+        width: 100%
+    }
+    .button_add_new button:nth-child(3){
+        display: none
+    }
+    .button_add_new{
+        width: 100%
+    }
+    .button_add_new button{
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+
+    .show_sle_newyear{
+        width: 100%
+    }
+    .show_sle_newyear select:nth-child(3) {
+        float: left;
+        width: 47%;
+        margin: 0 0 1% 1%;
+        height: 32px;
+    }
+    
+    .navbar-header {
+        border-bottom: 1px solid #45a2f3;
+        padding: 0 0 5px 0;
+    }
+    .animent_menu{
+        margin:0
+    }
+
+    .custom_style_fiel_new select{
+        margin: 0 0 5px 0;
+    }
+    .button_right_new_custom{
+        margin: 0 0 10px 0
+    }
+    .custom_style_fiel_new .button_right_new_custom button {
+        color: #fff;
+        width: 49%;
+        float: left;
+        margin: 0 0.5% 10px 0.5%;
+    }
+    
+    .navbar-toggle{
+        margin-left: 15px;
+        float: left;
+    }
+    
+    div.blueTable {
+        border-collapse: initial
+    }
+    .display_block_stt{
+        display: block !important;
+        width: 5%;
+        float: left;
+    }
+
+    
+    .on_off_responsive{
+        display: block
+    }
+    .on_off_responsive ul.dropdown-menu{
+        padding: 15px;
+        top: 20px;
+    }
+    .on_off_responsive ul.dropdown-menu .checkbox{
+        margin-top: 0
+    }
+    
+    .sub_nn_pre .dropdown ul.dropdown-menu {
+        min-width: auto;
+        top: 30px;
+        padding: 5px;
+        left: -40px;
+    }
+    .width_min_new {
+        min-width: 198px !important;
+        float: left;
+        left: 0 !important;
+    }
+    .mobile_width_fixed{
+        min-width: 768px
+    }
+    .scroll_custom_new {
+        overflow-x:scroll;
+    }
+    #adv-search {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .dropdown.dropdown-lg {
+        position: static !important;
+    }
+    .margin_left_right_new_col .dropdown.dropdown-lg .dropdown-menu{
+        min-width: 100%
+    }
+    .button_right_new_custom{
+        margin: 10px 0 0
+    }
+    .custom_style_fiel_new .btn-default {
+        margin: 0;
+    }
+    .margin_left_right_new{
+        padding: 0;
+    }
+    .left_menu_pd_0{
+        left: 0;
+    overflow-x: scroll;
+}
+    }
+    .search_top_icon_new{
+        width: 100%;
+        text-align: center
+    }
+    .margin_bottom_input_new .form-control:last-child{
+        margin-bottom: 10px
+    }
+    .menu_center_top{
+        display: none
+    }
+}
+@media only screen and (max-width: 568px){
+    .show_sle_newyear select:nth-child(2){
+        width: 100%;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    .show_sle_newyear select:nth-child(1){
+        width: 100%;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    .show_sle_newyear select:nth-child(3){
+        width: 100%;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+    .show_sle_newyear input {
+        width: 100%;
+        margin: 0 0 10px 0;
+        padding: 0
+    }
+    .show_sle_newyear button{
+        width: 100%;
+        margin: 0 0 10px 0
+    }
+    .menu_center_top{
+        padding: 0;
+    }
+    .menu_center_top ul {
+        width: 100%;
+        padding: 15px 0 0 0;
+        text-align: center;
+    }
+    .creat_new_form_ke_hoach, .nam_new_year, .nam_new_year_right, .nam_new_year_main_50{
+        width: 100%;
+        margin: 0 0 1% 0
+    }
+    .button_add_new button{
+        width: 100%;
+        float: left;
+        margin: 0;
+    }
+    
+    .custom_style_fiel_new .button_right_new_custom button {
+        color: #fff;
+        width: 49%;
+        float: left;
+        margin: 0 0.5% 10px 0.5%;
+    }
+    .margin_top_button_25{
+        margin-top: 0;
+    }
+
+}
+@media only screen and (max-width: 475px){
+    .menu_center_top ul li{
+        width: 100%;
+        padding: 0 0 10px 10px;
+    }
+    .margin_top_button_25{
+        margin-top: 0;
+    }
+    .button_add_new button:nth-child(1){
+        width: 100%;
+        margin: 0;
+    }
+    .button_add_new button:nth-child(2){
+        width: 100%;
+        margin: 0;
+    }
+}

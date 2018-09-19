@@ -1,0 +1,120 @@
+﻿<div id="modalAddEdit" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content option-display-control">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="lblTitle">Thêm mới</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-sx-12 col-sm-6 col-md-12 margin_left_right_new_col margin_top_form_new">
+
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Mã đơn vị <span>*</span></label>
+                        <input class="form-control" placeholder="Mã đơn vị">
+                    </div>
+
+                    <div class="col-sx-12 col-sm-6 col-md-12">
+                        <label>Tên đơn vị <span>*</span></label>
+                        <input class="form-control" placeholder="Tên đơn vị">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-12">
+                        <label>Tên khác </label>
+                        <input class="form-control" placeholder="Tên khác">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-11 fix-padding-right">
+                        <label>Chọn tỉnh/thành <span>*</span></label>                        
+                            <select class="form-control">
+                                <option>Hà Nội</option>
+                                <option selected>Hồ Chí Minh</option>
+                                <option>Đồng Nai</option>
+                                <option>Vũng Tàu</option>
+                                <option>Bình Thuận</option>
+                            </select>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-1">
+
+                        @{
+                            @Html.Partial("/Views/Shared/_RefreshAndAddNewPartial.cshtml", new ThanhTraNhaTrang.Models.Shared.IdActionModels
+                           {
+                               IdRefresh = "btnRefreshTinhThanh",
+                               IdAdd = "btnAddTinhThanh"
+                           })
+                        }
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-11 fix-padding-right">
+                        <label>Chọn quận/huyện <span>*</span></label>
+                        <select class="form-control">
+                            <option>Quận 1</option>
+                            <option>Quận 2</option>
+                            <option>Quận 3</option>
+                            <option>Quận 4</option>
+                            <option>Quận 5</option>
+                            <option>Quận 6</option>
+                            <option>Quận tân bình</option>
+                            <option>Quận phú nhuận</option>
+                            <option>Quận bình tân</option>
+                        </select>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-1">
+
+                        @{
+                            @Html.Partial("/Views/Shared/_RefreshAndAddNewPartial.cshtml", new ThanhTraNhaTrang.Models.Shared.IdActionModels
+                       {
+                           IdRefresh = "btnRefreshQuanHuyen",
+                           IdAdd = "btnAddQuanHuyen"
+                       })
+                        }
+                    </div>
+
+                    <div class="col-sx-12 col-sm-6 col-md-12">
+                        <label>Địa chỉ <span>*</span></label>
+                        <input class="form-control" placeholder="Địa chỉ">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Người đại diện <span>*</span></label>
+                        <input class="form-control" placeholder="Người đại diện">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Chức vụ <span>*</span></label>
+                        <input class="form-control" placeholder="Chức vụ">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Ngày cấp giấy phép <span>*</span></label>
+                        <input id="dtNgayCap" class="form-control date_custom_new" type="date" name="bday">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Ngày đổi giấy phép <span>*</span></label>
+                        <input id="dtNgayDoi" class="form-control date_custom_new" type="date" name="bday">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>
+                            <input type="checkbox" value=""> Sử dụng
+                        </label>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-12">
+                        <label>
+                            Ghi chú
+                        </label>
+                        <textarea class="form-control" rows="3" placeholder="Ghi chú"></textarea>
+                    </div>
+
+                </div>
+
+
+                <div class="row button_width_full">
+                    <button type="button" class="btn btn-outline btn-primary" id="btnSaveForm">Lưu</button>
+                    <button type="button" class="btn btn-outline btn-success">Lưu &amp; thêm mới</button>
+                    <button type="button" class="btn btn-outline btn-danger" data-dismiss="modal">Thoát</button>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

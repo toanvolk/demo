@@ -1,0 +1,11 @@
+﻿li a.btn-unknow{
+    color: red;    
+}
+.disable_height_min_noboder label.cus-check-box{
+    padding-bottom:15px;
+}
+#tblNganhNghe tr td button{
+    background: none;
+    border: 0;
+    outline: none;
+}

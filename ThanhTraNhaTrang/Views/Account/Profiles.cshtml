@@ -1,0 +1,99 @@
+﻿@section script{
+}
+@{
+    ViewBag.Title = "Hồ sơ";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="cus-profiles">
+    <div class="panel-group">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="h4">Thông tin cá nhân</div>
+            </div>
+            <div class="panel-body cus-panel-width-profiles">
+                <table class="table table-bordered">
+                    <colgroup width="160" />
+                    <tbody>
+                        <tr>
+                            <th scope="row">Mã nhân viên</th>
+                            <td>A0001</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tên nhân viên</th>
+                            <td>Nguyễn Văn A</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Giới tính</th>
+                            <td>Nam</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Ngày sinh</th>
+                            <td>01/01/2000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Địa chỉ</th>
+                            <td>Đường A, Phố C</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Số điện thoại</th>
+                            <td>
+                                0123456789
+                                <span class="fa fa-edit" data-toggle="collapse" data-target="#phone"></span>
+                                <div id="phone" class="collapse">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Nhập dữ liệu thay đổi" />
+                                        <span class="input-group-addon"><i class="fa fa-save" data-toggle="collapse" data-target="#phone"></i></span>
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Email</th>
+                            <td>
+                                abc@gmail.com
+                                <span class="fa fa-edit" data-toggle="collapse" data-target="#email"></span>
+                                <div id="email" class="collapse">
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Nhập dữ liệu thay đổi" />
+                                        <span class="input-group-addon"><i class="fa fa-save" data-toggle="collapse" data-target="#email"></i></span>
+                                    </div>
+
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="h4">Thông tin chung</div>
+            </div>
+            <div class="panel-body cus-panel-width-profiles">
+                <table class="table table-bordered">
+                    <colgroup width="160" />
+                    <tbody>
+                        <tr>
+                            <th>Nhóm</th>
+                            <td>Nhóm A1</td>
+                        </tr>
+                        <tr>
+                            <th>Chức vụ</th>
+                            <td>Chức vụ C1</td>
+                        </tr>
+                        <tr>
+                            <th>Bộ phận</th>
+                            <td>Quản lý</td>
+                        </tr>
+                        <tr>
+                            <th>Phòng ban</th>
+                            <td>Phòng kỷ thuật</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

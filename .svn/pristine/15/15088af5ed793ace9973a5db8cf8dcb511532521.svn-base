@@ -1,0 +1,211 @@
+﻿@section script{}
+@{
+    ViewBag.Title = "Phân quyền chức năng";
+}
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header"></h1>
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+
+    <!-- /.row -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="panel panel-default">
+
+                <!-- /.panel-heading -->
+                <div class="panel-body class_new_add_align">
+                    <div class="dataTable_wrapper scroll_fix_new">
+                        <div class="row custom_style_fiel_new">
+                            <div class="col-sx-12 col-sm-12 margin_left_right_new_col">
+                                <div class="col-xs-12 col-sm-6 col-md-3 padding_bottom_tablet">
+                                    <select class="form-control">
+                                        <option value="">Chọn nhóm người dùng</option>
+                                        <option value="25">Nhóm quản trị</option>
+                                        <option value="50">Quản trị</option>
+                                        <option value="100">Nhóm văn phòng</option>
+                                    </select>
+
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-1" style="margin-left:-30px">
+                                    <span class="dropdown icon_fix_right_table" style="margin-right:5px">
+                                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" title="Chức năng" aria-expanded="false">
+                                            <span class="fa fa-ellipsis-v"></span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#"><span class="fa fa-pencil"></span> Nạp</a></li>
+                                            <li><a href="#"><span class="fa fa-plus"></span> Thêm mới</a></li>
+                                        </ul>
+                                    </span>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <button type="button" class="btn btn-outline btn-primary" data-toggle="tooltip" title="Chọn để tiến hành phân quyền">Phân quyền</button>
+                                    <button type="button" class="btn btn-outline btn-warning" data-toggle="tooltip" title="Chọn để hủy phân quyền">Hủy phân quyền</button>
+                                    <button type="button" class="btn btn-outline btn-success" data-toggle="tooltip" title="Chọn để cập nhật phân quyền">Cập nhật</button>
+                                    @*<button type="button" class="btn btn-outline btn-danger" data-dismiss="modal" data-toggle="tooltip" title="Chọn để thoát phân quyền">Thoát</button>*@
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                        <div class="icon_check_disable_list_check_mobile">
+                            <a href="#demo_mobile" id="#select_acitve_action" class="btn btn-info" data-toggle="collapse" title="Chọn để xem chức năng con"><span class="fa fa-sort-down"></span></a>
+                            <div id="demo_mobile" class="collapse icon_check_all_new">
+                                <ul>
+                                    <li class="ck-button"><label><input type="checkbox" value="1" name="tinh_thanh" checked="checked"><span>Thêm</span></label></li>
+                                    <li class="ck-button"><label><input type="checkbox" value="1" name="phongban" checked="checked"><span>Sửa</span></label></li>
+                                    <li class="ck-button"><label><input type="checkbox" value="1" name="ngaysinh" checked="checked"><span>Xóa</span></label></li>
+                                    <li class="ck-button"><label><input type="checkbox" value="1" name="gioitinh" checked="checked"><span>Sao chép</span></label></li>
+                                    <li class="ck-button"><label><input type="checkbox" value="1" name="ghichu" checked="checked"><span>In</span></label></li>
+                                    <li class="ck-button"><label><input type="checkbox" value="1" name="sudung" checked="checked"><span>Xuất ra</span></label></li>
+                                    <li class="ck-button"><label><input type="checkbox" value="1" name="quyen" checked="checked"><span>Nhập vào</span></label></li>
+                                    <li class="ck-button"><label><input type="checkbox" value="1" name="ngaytao" checked="checked"><span>Tất cả</span></label></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="scroll_custom_new">
+
+                            <table class="table table-striped table-bordered table-hover table_desktop mobile_width_fixed nganh_nghe_kd_table_new">
+                                <tbody>
+                                    <tr class="gradeA">
+
+                                        <td class=" text_right_nn">
+                                            <buton id="swapFire" data-toggle="collapse" title="Chọn để xem chức năng con" data-parent="#accordion" href="#collapseTwo">
+                                                <span class="fa fa-plus view_icon_border"></span>
+                                                </button> Chức năng A
+                                        </td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+
+                                    </tr>
+                                    <tr id="collapseTwo" class="sub_nganh_nghe gradeA">
+
+                                        <td class="padding_left_span_3_phan_quyen">
+
+                                            <span class="fa fa-caret-right"></span>
+                                            Chức năng A1
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Xem</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Thêm</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Sửa</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Xóa</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Sao chép</label>
+                                        </td>
+                                        @*<td class="text-center">
+            <label><input type="checkbox"> In</label>
+        </td>
+        <td class="text-center">
+            <label><input type="checkbox"> Xuất ra</label>
+        </td>
+        <td class="text-center">
+            <label><input type="checkbox"> Nhập vào</label>
+        </td>*@
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Tất cả</label>
+                                        </td>
+
+                                    </tr>
+
+                                    <!---dòng 2-->
+                                    <tr class="gradeX">
+
+                                        <td class=" text_right_nn">
+                                            <buton id="swapFire_2" data-toggle="collapse" title="Chọn để xem chức năng con" data-parent="#accordion" href="#collapseTwo2">
+                                                <span class="fa fa-plus view_icon_border"></span>
+                                                </button> Người dùng
+                                        </td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+                                        <td class="text-center"></td>
+
+                                    </tr>
+                                    <tr id="collapseTwo2" class="sub_nganh_nghe gradeA">
+
+                                        <td class="padding_left_span_3_phan_quyen">
+
+                                            <span class="fa fa-caret-right"></span>
+                                            Nhóm người dùng
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Xem</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Thêm</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Sửa</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Xóa</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Sao chép</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> In</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Xuất ra</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Nhập vào</label>
+                                        </td>
+                                        <td class="text-center">
+                                            <label><input type="checkbox"> Tất cả</label>
+                                        </td>
+
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="page_nub">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </div>
+                    <!-- /.table-responsive -->
+
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+
+

@@ -1,0 +1,53 @@
+﻿<div id="modalChangePassword" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content disable_height_min_noboder">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title" id="title">Đổi mật khẩu</h4>
+            </div>
+            <div class="modal-body">
+                <form id="frmSave">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default">
+                                <!-- /.panel-heading -->
+                                <div class="panel-body class_new_add_align">
+                                    <div class="dataTable_wrapper scroll_fix_new">
+                                        <div class="row custom_style_fiel_new custom_style_input_lable">
+                                            <div class="margin_auto_center_500 margin_top_form_new form-group">
+                                                <div class="col-sx-12">
+                                                    <label>Mật khẩu đang sử dụng<span>*</span></label>
+                                                    <input class="form-control" type="password" placeholder="Mật khẩu đang sử dụng">
+                                                </div>
+                                                <div class="col-sx-12">
+                                                    <label>Mật khẩu mới <span>*</span></label>
+                                                    <input class="form-control" type="password" accesskey="K" placeholder="Mật khẩu mới">
+                                                </div>
+                                                <div class="col-sx-12">
+                                                    <label>Xác nhận mật khẩu mới <span>*</span></label>
+                                                    <input class="form-control" type="password" accesskey="X" placeholder="Xác nhận mật khẩu mới">
+                                                </div>
+                                                <div class="row button_width_full">
+                                                    <button type="button" class="btn btn-outline btn-primary">Cập nhật </button>
+                                                    <button type="button" class="btn btn-outline btn-danger" data-dismiss="modal">Thoát </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- /.table-responsive -->
+
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                                <!-- /.panel -->
+                            </div>
+                            <!-- /.col-lg-12 -->
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

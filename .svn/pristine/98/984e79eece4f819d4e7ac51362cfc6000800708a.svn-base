@@ -1,0 +1,52 @@
+﻿<div id="modalChangePassword" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document" style="overflow-y: auto; max-height:none;max-width:40%;min-width:40%;  margin-top: 50px; margin-bottom:50px;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="title">Modal title</h3>
+            </div>
+            <div class="modal-body">
+                <form id="frmSaveChangePassword">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="panel panel-default">
+                                    <!-- /.panel-heading -->
+                                    <div class="panel-body class_new_add_align">
+                                        <div class="dataTable_wrapper scroll_fix_new">
+                                            <div class="row custom_style_fiel_new custom_style_input_lable">
+                                                <div class="margin_auto_center margin_top_form_new form-group">
+                                                    <div class="col-sx-12 col-sm-12 col-md-12">
+                                                        <label>Mật khẩu cũ <span>*</span></label>
+                                                        <input class="form-control" type="password" placeholder="Tên đăng nhập">
+                                                    </div>
+                                                    <div class="col-sx-12 col-sm-12 col-md-12">
+                                                        <label>Mật khẩu mới <span>*</span></label>
+                                                        <input class="form-control" type="password" placeholder="Tên đăng nhập">
+                                                    </div>
+                                                    <div class="col-sx-12 col-sm-12 col-md-12">
+                                                        <label>Xác nhận mật khẩu mới <span>*</span></label>
+                                                        <input class="form-control" type="password" placeholder="Tên đăng nhập">
+                                                    </div>
+                                                    <div class="row button_width_full">
+                                                        <button type="button" class="btn btn-outline btn-primary">Cập nhật</button>
+                                                        <button type="button" class="btn btn-outline btn-danger" data-dismiss="modal">Thoát</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /.table-responsive -->
+
+                                        </div>
+                                        <!-- /.panel-body -->
+                                    </div>
+                                    <!-- /.panel -->
+                                </div>
+                                <!-- /.col-lg-12 -->
+                            </div>
+
+                        </div>
+                  
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>

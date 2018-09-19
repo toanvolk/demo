@@ -1,0 +1,78 @@
+﻿var ShareConfig = {
+
+}
+
+var ShareMain = {
+    init: function () {
+        $(document).ready(function () {
+            
+            ShareMain.registerEventOnLoaded();
+        });
+    },
+    registerEventOnLoaded: function () {
+        //Business
+        $("#btnKeHoachThanhTra").off('click').on('click', function () {
+            window.location.replace("/KeHoachThanhTra/Index");
+        });
+        
+        //System ---------------------------
+        $("#btnSystemConfig").off('click').on('click', function () {
+            window.location.replace("/SystemConfig/Index");
+        });
+        $("#btnAutoBackupData").off('click').on('click', function () {
+            window.location.replace("/AutoBackupData/Index");
+        });
+        $("#btnLogOut").off('click').on('click', function () {
+            window.location.replace("/Account/Login");
+        });
+        $("#btnUser").off('click').on('click', function () {
+            window.location.replace("/User/Index");
+        });
+        $("#btnChangePassword").off('click').on('click', function () {
+            $("#modalChangePassword").modal({ backdrop: 'static', keyboard: false });
+            $("#title").text("Thay đổi mật khẩu");
+        });
+        $("#btnPhanQuyen").off('click').on('click', function () {
+            window.location.replace("/PhanQuyen/Index");
+        });        
+        $("#btnUserGroup").off('click').on('click', function () {
+            window.location.replace("/UserGroup/Index");
+        });
+        //Catalog ------------------------------
+        $("#btnNganhNgheKinhDoanh").off('click').on('click', function () {
+            window.location.replace("/NganhNghe/Index");
+        });
+        
+        $("#btnDonVi").off('click').on('click', function () {
+            window.location.replace("/DonVi/Index");
+        });
+        
+        $("#btnTinhThanh").off('click').on('click', function () {
+            window.location.replace("/TinhThanh/Index");
+        });        
+       
+        $("#btnQuanHuyen").off('click').on('click', function () {
+            window.location.replace("/QuanHuyen/Index");
+        });
+        
+        $("#btnNhanVien").off('click').on('click', function () {
+            window.location.replace("/NhanVien/Index");
+        });
+        
+        $("#btnNhomNhanVien").off('click').on('click', function () {
+            window.location.replace("/NhomNhanVien/Index");
+        });
+        
+        $("#btnBoPhan").off('click').on('click', function () {
+            window.location.replace("/BoPhan/Index");
+        });
+        
+        $("#btnPhongBan").off('click').on('click', function () {
+            window.location.replace("/PhongBan/Index");
+        });
+        $("#btnChucVu").off('click').on('click', function () {
+            window.location.replace("/ChucVu/Index");
+        });
+    },
+}
+ShareMain.init();

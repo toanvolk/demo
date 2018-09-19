@@ -1,0 +1,168 @@
+﻿@section script{
+    <script src="~/Scripts/Controller/SystemConfigController.js"></script>
+}
+@{
+    ViewBag.Title = "Cấu hình hệ thống";
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Cấu hình hệ thống</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+
+            <!-- /.panel-heading -->
+            <div class="panel-body class_new_add_align">
+                <div class="dataTable_wrapper scroll_fix_new">
+                    <div class="row custom_style_fiel_new">
+                        <div class="col-sx-12 col-sm-9 margin_left_right_new_col">
+                            <div class="col-xs-12 col-sm-6 col-md-2 padding_bottom_tablet">
+                                <div class="input-group" id="adv-search">
+
+                                    <div class="input-group-btn">
+                                        <div class="btn-group" role="group">
+                                            <div class="dropdown dropdown-lg">
+                                                <div class="dropdown-menu dropdown-menu-right left_menu_pd_0" role="menu" id="search" class="collapse">
+                                                    <form class="form-horizontal" role="form">
+                                                        <div class="form-group search_filter_check">
+
+                                                            <ul>
+                                                                <li>
+                                                                    <label>
+                                                                        <input data-toggle="collapse" data-target="#input_search_doituong" type="checkbox">
+                                                                        <span> Đối tượng</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li id="input_search_doituong" class="collapse">
+                                                                    <label>
+                                                                        <input type="text" placeholder="Nhập từ khóa" class="form-control search_input_text">
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                            <ul>
+                                                                <li>
+                                                                    <label>
+                                                                        <input data-toggle="collapse" data-target="#input_search_giatri" type="checkbox">
+                                                                        <span> Giá trị</span>
+                                                                    </label>
+                                                                </li>
+                                                                <li id="input_search_giatri" class="collapse">
+                                                                    <label>
+                                                                        <input type="text" placeholder="Nhập từ khóa" class="form-control search_input_text">
+                                                                    </label>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div class="button_search_bottom_new">
+                                                            <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>Tìm</button>
+                                                            <button type="button" class="btn btn-outline btn-danger" data-toggle="collapse" data-target="#search">Thoát</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="search_top_icon_new"><button style="background: none; border: none; color: #ccc" data-toggle="collapse" data-target="#search" type="button" class="btn btn-primary button_search_new"><span class="fa fa-search"></span> Tìm kiếm</button></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sx-12 col-sm-3 margin_left_right_new_col">
+                            <div class="col-xs-12 col-sm-12 button_right_new_custom">
+                                <button type="button" class="btn btn-primary" id="btnAdd"><span class="fa fa-plus"></span></button>
+                                <button type="button" class="btn btn-danger" id="btnDelete"><span class="fa fa-trash-o"></span></button>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="icon_check_disable_list_check_mobile">
+                        <a href="#demo_mobile" id="#select_acitve_action" class="btn btn-info" data-toggle="collapse">Chọn cột hiển thị <span class="fa fa-sort-down"></span></a>
+                        <div id="demo_mobile" class="collapse icon_check_all_new">
+                            <ul>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="doituong" checked="checked"><span>Đối tượng</span></label></li>
+                                <li class="ck-button"><label><input type="checkbox" value="1" name="giatri" checked="checked"><span>Giá trị</span></label></li>
+                            </ul>
+                            <div class="exit_button_new"><a href="#demo_mobile" class="btn btn-outline btn-danger" data-toggle="collapse"><span class="fa fa-times"></span> Đóng</a></div>
+                        </div>
+                    </div>
+                    <div class="scroll_custom_new">
+
+                        <table class="table table-striped table-bordered table-hover table_desktop mobile_width_fixed nganh_nghe_kd_table_new">
+
+                            <thead>
+                                <tr class="bg_title_table_new sub_nn_pre">
+                                    <th class="center icon_span_check_show text_right_nn width_stt_1">
+                                        <div class="icon_check_disable_list_check">
+                                            <a href="#demo" class="btn btn-info" data-toggle="collapse"><span class="fa fa-sort-down"></span></a>
+                                            <div id="demo" class="collapse icon_check_all_new">
+                                                <ul>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="doituong" checked="checked"><span>Đối tượng</span></label></li>
+                                                    <li class="ck-button"><label><input type="checkbox" value="1" name="giatri" checked="checked"><span>Giá trị</span></label></li>
+                                                </ul>
+                                                <div class="exit_button_new"><a href="#demo" class="btn btn-outline btn-danger" data-toggle="collapse"><span class="fa fa-times"></span> Đóng</a></div>
+                                            </div>
+                                        </div>
+                                        STT
+                                    </th>
+                                    <th class="doituong text_right_nn">Đối tượng </th>
+                                    <th class="giatri text_right_nn">Giá trị</th>
+                                    <th style="width: 70px"></th>
+                                    <th class="center_new edit_new_cus sub_nn_pre headcol" style="border: none">
+                                        <span class="fa fa-pencil icon_fix_right_table" style="padding: 3px 0 0;"></span>
+                                        <span class="icon_fix_right_table"><input type="checkbox" class="check" id="checkAll"></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="gradeA">
+                                    <td class="doituong text_right_nn width_stt_1">1</td>
+                                    <td class="giatri text_right_nn">Đối tượng</td>
+                                    <td class="tinh_thanh text_right_nn">Giá trị</td>
+                                    <td style="width: 70px"></td>
+                                    <td style="width: 72px" class="fixed_right_icon_action headcol">
+                                        <span class="dropdown icon_fix_right_table">
+                                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                                                <span class="fa fa-ellipsis-v"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#"><span class="fa fa-pencil"></span> Sửa</a></li>
+                                                <li><a href="#"><span class="fa fa-trash-o"></span> Xóa</a></li>
+                                            </ul>
+                                        </span>
+                                        <span class="icon_fix_right_table"><input type="checkbox" class="check"></span>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="page_nub">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- /.table-responsive -->
+
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+
+@Html.Partial("/Views/SystemConfig/_AddEditPartial.cshtml")

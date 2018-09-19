@@ -1,0 +1,99 @@
+﻿@section script{
+    
+}
+
+
+@{
+    ViewBag.Title = "Tự động sao lưu dữ liệu";
+}
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Tự động sao lưu dữ liệu</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+
+<!-- /.row -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+
+            <!-- /.panel-heading -->
+            <div class="panel-body class_new_add_align">
+                <div class="dataTable_wrapper scroll_fix_new">
+                    <div class="row custom_style_fiel_new custom_style_input_lable">
+                        <div class="margin_auto_center">
+                            <div class="form-group">
+                                <label>File input</label>
+                                <input type="file">
+                            </div>
+                            <div class="col-sx-12 col-sm-6 col-md-6 padding_left_right_col">
+                                <div class="form-group">
+                                    <label>Thời gian chạy lặp lại số ngày</label>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sx-12 col-sm-6 col-md-6 padding_left_right_col">
+                                <div class="form-group">
+                                    <label>Lúc</label>
+                                    <input class="form-control" type="date" id="myDate" name="bday" min="1980-01-01" max="2000-01-01">
+                                </div>
+                            </div>
+                            <div class="col-sx-12 col-sm-6 col-md-6 padding_left_right_col">
+                                <div class="form-group">
+                                    <label>Ngày bắt đầu</label>
+                                    <select class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+                            <div class="col-sx-12 col-sm-6 col-md-3 padding_left_right_col">
+                                <div class="form-group">
+                                    <label type="button" data-toggle="collapse" data-target="#ngay_ket_thuc">
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Ngày kết thúc
+                                    </label>
+
+                                    <div class="row  collapse in" id="ngay_ket_thuc" aria-expanded="true" style="">
+                                        <input class="form-control" type="button" data-toggle="collapse" id="myDate " name="bday" min="1980-01-01" max="2000-01-01">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-sx-12 col-sm-6 col-md-3 padding_left_right_col">
+                                <div class="form-group">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"> Không kết thúc
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /.table-responsive -->
+
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+
+</div>
+<!-- /#page-wrapper -->

@@ -1,0 +1,95 @@
+﻿<div id="modalAddEdit" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thêm mới</h4>
+            </div>
+            <div class="modal-body">
+                <div class="col-sx-12 col-sm-6 col-md-12 margin_left_right_new_col margin_top_form_new">
+
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Mã đơn vị <span>*</span></label>
+                        <input class="form-control" placeholder="Mã đơn vị">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-12">
+                        <label>Tên đơn vị <span>*</span></label>
+                        <input class="form-control" placeholder="Tên đơn vị">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-12">
+                        <label>Tên khác </label>
+                        <input class="form-control" placeholder="Tên khác">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Chọn tỉnh/thành <span>*</span></label>
+                        <select class="form-control">
+                            <option>Hà Nội</option>
+                            <option>Hồ Chí Minh</option>
+                            <option>Đồng Nai</option>
+                            <option>Vũng Tàu</option>
+                            <option>Bình Thuận</option>
+                        </select>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Chọn quận/huyện <span>*</span></label>
+                        <select class="form-control">
+                            <option>Quận/Huyện</option>
+                            <option>Hồ Chí Minh</option>
+                            <option>Đồng Nai</option>
+                            <option>Vũng Tàu</option>
+                            <option>Bình Thuận</option>
+                        </select>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-12">
+                        <label>Địa chỉ <span>*</span></label>
+                        <input class="form-control" placeholder="Địa chỉ">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Người đại diện <span>*</span></label>
+                        <input class="form-control" placeholder="Người đại diện">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Chức vụ <span>*</span></label>
+                        <input class="form-control" placeholder="Chức vụ">
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Ngày đổi giấy phép <span>*</span></label>
+                        <form action="/action_page.php">
+                            <input class="form-control date_custom_new" type="date" name="bday">
+                        </form>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>Ngày đổi giấy phép <span>*</span></label>
+                        <form action="/action_page.php">
+                            <input class="form-control date_custom_new" type="date" name="bday">
+                        </form>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-6">
+                        <label>
+                            <input type="checkbox" value=""> Sử dụng
+                        </label>
+                    </div>
+                    <div class="col-sx-12 col-sm-6 col-md-12">
+                        <textarea class="form-control" rows="3" placeholder="Ghi chú"></textarea>
+                    </div>
+
+                </div>
+
+
+                <div class="row button_width_full">
+                    <button type="button" class="btn btn-outline btn-primary" id="btnSaveForm">Lưu</button>
+                    <button type="button" class="btn btn-outline btn-success">Lưu &amp; thêm mới</button>
+                    <button type="button" class="btn btn-outline btn-danger" data-dismiss="modal">Thoát</button>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,101 @@
+﻿
+<div id="modalAddEdit" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content disable_height_min_noboder">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" data-toggle="tooltip" title="Đóng">&times;</button>
+                <h4 class="modal-title" id="title">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <form id="frmSave">
+                    <!-- /.row -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-default ">
+                                <!-- /.panel-heading -->
+                                <div class="panel-body class_new_add_align">
+                                    <div class="dataTable_wrapper scroll_fix_new">
+                                        <div class="row custom_style_fiel_new custom_style_input_lable">
+                                            <div class="margin_auto_center_500 margin_top_form_new margin_top_form_new_1 form-group">
+                                                <div class="col-sx-12 col-sm-8">
+                                                    <label>Tài khoản đăng nhập <span>*</span></label>
+                                                    <input class="form-control" type="text" placeholder="Tên đăng nhập">
+                                                </div>
+                                                <div class="col-sx-12 col-md-12">
+                                                    <label>Tên hiển thị <span>*</span></label>
+                                                    <input class="form-control" type="text" placeholder="Tên đầy đủ">
+                                                </div>
+                                                <div class="col-sx-12 col-md-12">
+                                                    <label>Email <span>*</span></label>
+                                                    <input class="form-control" type="text" placeholder="Email">
+                                                </div>
+
+                                                <div class="col-sx-12 col-sm-11">
+                                                    <label>Thuộc nhóm quyền<span>*</span></label>
+                                                    <select class="form-control">
+                                                        <option>Quản lý</option>
+                                                        <option>Văn phòng</option>
+                                                        <option>văn thư</option>
+                                                        <option>Thư ký nghiệp vụ</option>
+                                                    </select>         
+                                                </div>
+                                                @{             
+                                                    var obj = new ThanhTraNhaTrang.Models.Shared.IdActionModels { IdRefresh = "btnRefresh", IdAdd = "btnAdd" };
+                                                    @Html.Partial("/Views/Shared/_RefreshAndAddNewPartial.cshtml", obj)
+                                                }
+                                                <div class="col-sx-12 col-sm-6 col-md-6">
+                                                    <label>Mật khẩu<span>*</span></label>
+                                                    <input class="form-control" type="password" placeholder="Mật khẩu">
+                                                </div>
+                                                <div class="col-sx-12 col-sm-6 col-md-6">
+                                                    <label>Xác nhận mật khẩu</label>
+                                                    <input class="form-control" type="password" placeholder="Xác nhận mật khẩu">
+                                                </div>
+                                                <div class="col-sx-12 col-sm-6 col-md-6">
+                                                    <label>Ngày sinh</label>
+                                                    <input class="form-control" type="date" id="myDate" name="bday" min="1980-01-01" max="2050-01-01" value="2018-01-30">
+                                                </div>
+                                                <div class="col-sx-12 col-sm-6 col-md-6">
+                                                    <label>Giới tính</label>
+                                                    <select class="form-control">
+                                                        <option>Nam</option>
+                                                        <option>Nữ</option>
+                                                        <option>Giới tính thứ 3</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-sx-12 col-sm-12 col-md-12">
+                                                    <label>Ghi chú</label>
+                                                    <textarea class="form-control" rows="2" placeholder="Ghi chú"></textarea>
+                                                </div>
+                                                <div class="col-sx-12 col-sm-12 col-md-12">
+                                                    <label class="col-sx-12 col-md-5"><input type="checkbox"> Quyền quản trị</label>
+                                                    <label class="col-sx-12 col-md-3"><input type="checkbox"> Sử dụng</label>
+                                                </div>
+
+                                                <div class="row button_width_full">
+                                                    <button type="button" class="btn btn-outline btn-primary" data-toggle="tooltip" title="Lưu dữ liệu">Lưu</button>
+                                                    <button type="button" class="btn btn-outline btn-success" data-toggle="tooltip" title="Lưu và thêm mới dữ liệu">Lưu và thêm</button>
+                                                    <button type="button" class="btn btn-outline btn-danger" data-dismiss="modal" data-toggle="tooltip" title="Đóng cửa sổ">Thoát</button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- /.table-responsive -->
+
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                                <!-- /.panel -->
+                            </div>
+                            <!-- /.col-lg-12 -->
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
